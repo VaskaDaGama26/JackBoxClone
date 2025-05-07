@@ -36,7 +36,8 @@
     &__games {
       width: 100%;
       display: grid;
-      grid-template-columns: 1fr 1fr 1fr;
+      grid-template-columns: 1fr 1fr;
+      justify-items: center;
       gap: 1.25rem;
       &__img {
         @include size($w: 213px, $h: 96px);
@@ -55,7 +56,7 @@
   }
 }
 .about__mobile {
-    display: none;
+  display: none;
   &__title {
     margin-top: 1.25rem;
     color: $white;

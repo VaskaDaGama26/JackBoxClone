@@ -195,7 +195,8 @@
 .about__right__games {
   width: 100%;
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-columns: 1fr 1fr;
+  justify-items: center;
   gap: 1.25rem;
 }
 .about__right__games__img {
