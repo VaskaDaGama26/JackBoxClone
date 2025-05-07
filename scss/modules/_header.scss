@@ -1,0 +1,65 @@
+.header {
+  @include flex(row, $align: center, $justify: space-between);
+  @include size($w: 100%, $h: 88px);
+  z-index: 999;
+  padding: 1rem 2.5rem;
+  background: linear-gradient(180deg, $headerGradient, transparent);
+
+  &__wrapper {
+    background: $dark-blue;
+    position: sticky;
+    top: 0;
+  }
+  &__left {
+    @include flex(row, $align: center);
+  }
+  &__right {
+    @include flex(row, 1.5rem);
+  }
+}
+
+.nav {
+  display: block;
+  margin-left: 3rem;
+
+  &__list {
+    @include flex(row);
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+
+    & a {
+      text-decoration: none;
+    }
+  }
+  &__item {
+    @include flex(row, 0.4rem, center);
+    @include text(1rem, 700, center, 1.25rem, $white);
+    padding: 0.75rem;
+    cursor: pointer;
+    &:hover {
+      color: $purple;
+    }
+    &__icon {
+      @include size($w: 6px, $h: 12px);
+    }
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .header {
+    padding: 1rem 5rem;
+  }
+}
+@media screen and (max-width: 960px) {
+  .nav {
+    display: none;
+  }
+  .menu {
+    display: block;
+  }
+  .header {
+    height: 56px;
+    padding: 1rem;
+  }
+}

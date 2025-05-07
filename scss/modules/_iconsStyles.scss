@@ -1,0 +1,52 @@
+// LOGO
+.logo {
+  @include flex(row, $align: center);
+  width: fit-content;
+
+  &__img {
+    @include size($w: auto, $h: 38px);
+  }
+
+  &:hover {
+    filter: brightness(0) saturate(100%) invert(66%) sepia(58%) saturate(429%)
+      hue-rotate(199deg) brightness(102%) contrast(106%);
+  }
+}
+
+// **NAV**
+
+// ARROW
+.arrow {
+  @include flex(row, $align: center);
+  @include size($w: 6px, $h: 100%);
+}
+// GLOBE AND CART
+.globe,
+.cart {
+  @include size($w: 20px, $h: 20px);
+  & .primary {
+    color: $white;
+  }
+  & .secondary {
+    color: $gray;
+  }
+  &:hover {
+    & .primary {
+      color: $purple;
+    }
+    & .secondary {
+      color: $dark-gray;
+    }
+  }
+}
+// BURGER
+.menu {
+  @include size($w: 20px, $h: auto);
+  display: none;
+  margin-left: 0.75rem;
+  color: $white;
+
+  &:hover {
+    color: $purple;
+  }
+}

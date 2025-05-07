@@ -1,0 +1,15 @@
+@mixin text($fs, $fw: null, $align: null, $lh: null, $color: null) {
+  font-size: $fs;
+  @if $fw != null {
+    font-weight: $fw;
+  }
+  @if $align != null {
+    text-align: $align;
+  }
+  @if $lh != null {
+    line-height: $lh;
+  }
+  @if $color != null {
+    color: $color;
+  }
+}

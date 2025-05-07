@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/style.css" />
+    <title>JackBoxClone</title>
+  </head>
+  <body>
+    <!-- HEADER -->
+    <header class="header__wrapper">
+      <div class="header">
+        <div class="header__left">
+          <!-- LOGO -->
+          <a class="logo" href="/">
+            <img class="logo__img" src="/public//logo.svg" alt="Logo" />
+          </a>
+          <!-- BURGER ICON -->
+          <div class="menu">
+            <svg
+              data-v-dfb977e7=""
+              class="svg-inline--fa fa-bars icon"
+              aria-hidden="true"
+              focusable="false"
+              data-prefix="far"
+              data-icon="bars"
+              role="img"
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 448 512"
+              data-fa-i2svg=""
+            >
+              <path
+                fill="currentColor"
+                d="M0 88C0 74.7 10.7 64 24 64l400 0c13.3 0 24 10.7 24 24s-10.7 24-24 24L24 112C10.7 112 0 101.3 0 88zM0 248c0-13.3 10.7-24 24-24l400 0c13.3 0 24 10.7 24 24s-10.7 24-24 24L24 272c-13.3 0-24-10.7-24-24zM448 408c0 13.3-10.7 24-24 24L24 432c-13.3 0-24-10.7-24-24s10.7-24 24-24l400 0c13.3 0 24 10.7 24 24z"
+              ></path>
+            </svg>
+          </div>
+          <!-- NAVIGATION -->
+          <nav class="nav">
+            <ul class="nav__list">
+              <a href="#games">
+                <li class="nav__item">
+                  Games
+                  <div class="arrow">
+                    <svg
+                      class="svg-inline--fa fa-caret-right"
+                      data-v-dc1f8e69=""
+                      aria-hidden="true"
+                      focusable="false"
+                      data-prefix="fas"
+                      data-icon="caret-right"
+                      role="img"
+                      xmlns="http://www.w3.org/2000/svg"
+                      viewBox="0 0 256 512"
+                      data-fa-i2svg=""
+                    >
+                      <path
+                        fill="currentColor"
+                        d="M246.6 278.6c12.5-12.5 12.5-32.8 0-45.3l-128-128c-9.2-9.2-22.9-11.9-34.9-6.9s-19.8 16.6-19.8 29.6l0 256c0 12.9 7.8 24.6 19.8 29.6s25.7 2.2 34.9-6.9l128-128z"
+                      ></path>
+                    </svg>
+                  </div>
+                </li>
+              </a>
+              <a href="#howtoplay">
+                <li class="nav__item">How To Play</li>
+              </a>
+              <a href="#company">
+                <li class="nav__item">
+                  Company
+                  <div class="arrow">
+                    <svg
+                      class="svg-inline--fa fa-caret-right"
+                      data-v-dc1f8e69=""
+                      aria-hidden="true"
+                      focusable="false"
+                      data-prefix="fas"
+                      data-icon="caret-right"
+                      role="img"
+                      xmlns="http://www.w3.org/2000/svg"
+                      viewBox="0 0 256 512"
+                      data-fa-i2svg=""
+                    >
+                      <path
+                        fill="currentColor"
+                        d="M246.6 278.6c12.5-12.5 12.5-32.8 0-45.3l-128-128c-9.2-9.2-22.9-11.9-34.9-6.9s-19.8 16.6-19.8 29.6l0 256c0 12.9 7.8 24.6 19.8 29.6s25.7 2.2 34.9-6.9l128-128z"
+                      ></path>
+                    </svg>
+                  </div>
+                </li>
+              </a>
+              <a href="#support">
+                <li class="nav__item">Support</li>
+              </a>
+              <a href="#signup">
+                <li class="nav__item">Sign Up</li>
+              </a>
+            </ul>
+          </nav>
+        </div>
+        <div class="header__right">
+          <!-- GLOBE ICON -->
+          <a href="/">
+            <div class="globe">
+              <svg
+                data-v-dc1f8e69=""
+                class="svg-inline--fa fa-globe icon"
+                aria-hidden="true"
+                focusable="false"
+                data-prefix="fad"
+                data-icon="globe"
+                role="img"
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 512 512"
+                data-fa-i2svg=""
+              >
+                <g class="fa-duotone-group">
+                  <path
+                    class="secondary"
+                    fill="currentColor"
+                    d="M0 256c0-22.1 2.8-43.5 8.1-64c41 0 82.1 0 123.1 0c-1 10.3-1.8 20.8-2.4 31.6c-.1 2.6-.2 5.3-.4 8.1c-.1 2.5-.2 5-.2 7.5l0 .6c-.1 2.6-.1 5.1-.1 7.5l0 .4c0 2.6 0 5.2-.1 7.7l0 .4c0 8.2 .2 16.4 .5 24.5c.1 2.6 .2 5.3 .3 7.9c.5 10.7 1.3 21.3 2.4 31.6L8.1 320C2.8 299.5 0 278.1 0 256zm18.6-96C48.5 86.3 111.6 29.6 189.5 8.7c-25 34.6-44.3 88-54.2 151.3c-38.9 0-77.8 0-116.6 0zm0 192l116.6 0c9.9 63.3 29.2 116.7 54.2 151.3C111.6 482.4 48.5 425.7 18.6 352zM160.5 231.4c.1-2.7 .2-5.4 .4-8.1c.6-10.7 1.4-21.1 2.5-31.4c61.8 0 123.6 0 185.3 0c2.2 20.4 3.3 41.9 3.3 64c0 22.1-1.2 43.5-3.3 64c-61.8 0-123.6 0-185.3 0c-1.1-10.2-1.9-20.7-2.5-31.4c-.3-5.4-.5-10.9-.6-16.4c-.1-2.7-.1-5.3-.2-8c0-2.6-.1-5.2-.1-7.8l0-.4c0-.1 0-.3 0-.4c0-2.8 0-5.5 .1-8.2c0-2.5 .1-5.1 .2-7.6l0-.6c.1-2.5 .2-5.1 .3-7.7zm7.2-71.4c6.1-36.7 15.5-69.2 27.1-95.5c10.5-23.8 22.2-41.2 33.6-52.1c6.8-6.5 12.8-10.2 18.1-12.2c3.2-.1 6.3-.2 9.5-.2s6.3 .1 9.5 .2c5.3 1.9 11.4 5.7 18.1 12.2c11.4 10.9 23.1 28.3 33.6 52.1c11.6 26.3 21 58.8 27.1 95.5c-58.9 0-117.8 0-176.7 0zm0 192l176.7 0c-6.1 36.7-15.5 69.2-27.1 95.5c-10.5 23.8-22.2 41.2-33.6 52.1c-6.8 6.5-12.8 10.2-18.1 12.2c-3.2 .1-6.3 .2-9.5 .2s-6.3-.1-9.5-.2c-5.3-1.9-11.4-5.7-18.1-12.2c-11.4-10.9-23.1-28.3-33.6-52.1c-11.6-26.3-21-58.8-27.1-95.5zM322.5 8.7c77.8 20.9 141 77.5 170.9 151.3c-38.9 0-77.8 0-116.6 0C366.9 96.7 347.5 43.3 322.5 8.7zm0 494.6c25-34.6 44.3-88 54.2-151.3l116.6 0c-29.8 73.7-93 130.4-170.9 151.3zM380.8 192c41 0 82.1 0 123.1 0c5.3 20.5 8.1 41.9 8.1 64s-2.8 43.5-8.1 64l-123.1 0c2.1-20.6 3.2-42 3.2-64c0-22-1.1-43.4-3.2-64z"
+                  ></path>
+                  <path
+                    class="primary"
+                    fill="currentColor"
+                    d="M344.3 352c-6.1 36.7-15.5 69.2-27.1 95.5c-10.5 23.8-22.2 41.2-33.6 52.1c-6.8 6.5-12.8 10.2-18.1 12.2c19.7-.7 38.7-3.6 57-8.6c25-34.6 44.3-88 54.2-151.3l116.6 0c4.2-10.3 7.7-21 10.5-32l-123.1 0c2.1-20.6 3.2-42 3.2-64s-1.1-43.4-3.2-64l123.1 0c-2.8-11-6.4-21.7-10.5-32l-116.6 0C366.9 96.7 347.5 43.3 322.5 8.7c-18.3-4.9-37.4-7.8-57-8.6c5.3 1.9 11.4 5.7 18.1 12.2c11.4 10.9 23.1 28.3 33.6 52.1c11.6 26.3 21 58.8 27.1 95.5l-176.7 0c6.1-36.7 15.5-69.2 27.1-95.5c10.5-23.8 22.2-41.2 33.6-52.1c6.8-6.5 12.8-10.2 18.1-12.2c-19.7 .7-38.7 3.6-57 8.6c-25 34.6-44.4 88-54.2 151.3L18.6 160c-4.2 10.3-7.7 21-10.5 32l123.1 0c-2.1 20.6-3.2 42-3.2 64s1.1 43.4 3.2 64L8.1 320c2.8 11 6.4 21.7 10.5 32l116.6 0c9.9 63.3 29.2 116.7 54.2 151.3c18.3 4.9 37.4 7.8 57 8.6c-5.3-1.9-11.4-5.7-18.1-12.2c-11.4-10.9-23.1-28.3-33.6-52.1c-11.6-26.3-21-58.8-27.1-95.5l176.7 0zm7.7-96c0 22.1-1.2 43.6-3.3 64l-185.3 0c-2.2-20.4-3.3-41.9-3.3-64s1.2-43.6 3.3-64l185.3 0c2.2 20.4 3.3 41.9 3.3 64z"
+                  ></path>
+                </g>
+              </svg>
+            </div>
+          </a>
+          <!-- CART ICON -->
+          <a href="/">
+            <div class="cart">
+              <svg
+                data-v-85a15825=""
+                class="svg-inline--fa fa-shopping-cart icon"
+                aria-hidden="true"
+                focusable="false"
+                data-prefix="fad"
+                data-icon="shopping-cart"
+                role="img"
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 576 512"
+                data-fa-i2svg=""
+              >
+                <g class="fa-duotone-group">
+                  <path
+                    class="secondary"
+                    fill="currentColor"
+                    d="M120.1 32c2 4.2 3.5 8.8 4.4 13.5c15.4 80.8 30.8 161.7 46.2 242.5l288.5 0c32.6 0 61.1-21.8 69.5-53.3l41-152.3C576.6 57 557.4 32 531.1 32l-411 0z"
+                  ></path>
+                  <path
+                    class="primary"
+                    fill="currentColor"
+                    d="M0 24C0 10.7 10.7 0 24 0L69.5 0c26.9 0 50 19.1 55 45.5l51.6 271c2.2 11.3 12.1 19.5 23.6 19.5L488 336c13.3 0 24 10.7 24 24s-10.7 24-24 24l-288.3 0c-34.6 0-64.3-24.6-70.7-58.5L77.4 54.5c-.7-3.8-4-6.5-7.9-6.5L24 48C10.7 48 0 37.3 0 24zM128 464a48 48 0 1 1 96 0 48 48 0 1 1 -96 0zm336-48a48 48 0 1 1 0 96 48 48 0 1 1 0-96z"
+                  ></path>
+                </g>
+              </svg>
+            </div>
+          </a>
+        </div>
+      </div>
+    </header>
+
+    <section class="main__page"></section>
+    <!-- FOOTER -->
+    <footer class="footer">
+      <div class="socials">
+        <!-- FORM -->
+        <div class="socials__left">
+          <!-- LOGO -->
+          <a class="logo socials__left__logo" href="/">
+            <img class="logo__img" src="/public//logo.svg" alt="Logo" />
+          </a>
+          <h4 class="newsletter__heading">Join the newsletter</h4>
+          <p class="newsletter__desc">
+            The latest news, events, and laughs from Jackbox Games, straight to
+            your inbox.
+          </p>
+          <!-- EMAIL INPUT FORM -->
+          <form action="" class="newsletter__form">
+            <div class="newsletter__form__email">
+              <svg
+                class="svg-inline--fa fa-envelope email-icon"
+                data-v-afdd19be=""
+                aria-hidden="true"
+                focusable="false"
+                data-prefix="far"
+                data-icon="envelope"
+                role="img"
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 512 512"
+                data-fa-i2svg=""
+              >
+                <path
+                  fill="currentColor"
+                  d="M64 112c-8.8 0-16 7.2-16 16l0 22.1L220.5 291.7c20.7 17 50.4 17 71.1 0L464 150.1l0-22.1c0-8.8-7.2-16-16-16L64 112zM48 212.2L48 384c0 8.8 7.2 16 16 16l384 0c8.8 0 16-7.2 16-16l0-171.8L322 328.8c-38.4 31.5-93.7 31.5-132 0L48 212.2zM0 128C0 92.7 28.7 64 64 64l384 0c35.3 0 64 28.7 64 64l0 256c0 35.3-28.7 64-64 64L64 448c-35.3 0-64-28.7-64-64L0 128z"
+                ></path>
+              </svg>
+              <input
+                type="text"
+                placeholder="Email address"
+                class="newsletter__form__email__input"
+              />
+            </div>
+            <button class="newsletter__form__button">Subscribe</button>
+          </form>
+        </div>
+        <!-- SOCIALS ICONS -->
+        <div class="socials__right">
+          <a href="#fb">
+            <img
+              src="/public/socials/facebook.svg"
+              alt="Facebook"
+              class="socials__right__icon"
+            />
+          </a>
+          <a href="#inst">
+            <img
+              src="/public/socials/instagram.svg"
+              alt="Instagram"
+              class="socials__right__icon"
+            />
+          </a>
+          <a href="#reddit"
+            ><img
+              src="/public/socials/reddit.svg"
+              alt="Reddit"
+              class="socials__right__icon"
+            />
+          </a>
+          <a href="#tt">
+            <img
+              src="/public/socials/tiktok.svg"
+              alt="TikTok"
+              class="socials__right__icon"
+            />
+          </a>
+          <a href="#x">
+            <img
+              src="/public/socials/twitter.svg"
+              alt="Twitter"
+              class="socials__right__icon"
+            />
+          </a>
+          <a href="#yt">
+            <img
+              src="/public/socials/youtube.svg"
+              alt="YouTube"
+              class="socials__right__icon"
+            />
+          </a>
+        </div>
+      </div>
+      <!-- COPYRIGHT -->
+      <div class="copyright">
+        <p class="copyright__label">
+          © Copyright 2025 Jackbox Games. All rights reserved.
+        </p>
+        <!-- DOCS LINKS -->
+        <div class="copyright__right">
+          <a class="copyright__right__link" href="/">Terms of Service</a>
+          <a class="copyright__right__link" href="/">Privacy Policy</a>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
