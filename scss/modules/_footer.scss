@@ -76,7 +76,7 @@
       &__input {
         @include size($w: 100%, $h: 48px);
         position: relative;
-        background-color: $input-bg;
+        background-color: $gray-bg;
         padding: 0 0 0 2.25rem;
         border-width: 0 0 2px 0;
         border-color: $purple;

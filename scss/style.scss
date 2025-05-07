@@ -10,10 +10,12 @@
 @import "./mixins/text";
 
 // MODULES
-@import "./modules/colors.scss";
-@import "./modules/iconsStyles.scss";
-@import "./modules/header.scss";
-@import "./modules/footer.scss";
+@import "./modules/colors";
+@import "./modules/iconsStyles";
+
+@import "./modules/header";
+@import "./modules/faq";
+@import "./modules/footer";
 
 html {
   @include size($w: 100dvw, $h: 100dvh);
@@ -33,7 +35,7 @@ body {
 
 .main__page {
   background: url(/public/sparkle-bg.png);
-  height: 100%;
+  height: fit-content;
 }
 
 // FOCUS FOR ALL ELEMENTS

@@ -50,3 +50,19 @@
     color: $purple;
   }
 }
+
+.question__icon {
+  color: $white;
+  @include size($w: 14px, $h: 16px);
+  transition-duration: 300ms;
+
+  &.open {
+    transform: rotateZ(45deg);
+  }
+}
+
+@media screen and (max-width: 960px) {
+  .logo img {
+    @include size($w: 85px, $h: 32px);
+  }
+}

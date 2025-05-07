@@ -34,7 +34,7 @@
   }
   &__item {
     @include flex(row, 0.4rem, center);
-    @include text(1rem, 700, center, 1.25rem, $white);
+    @include text(1.125rem, 700, center, 1.25rem, $white);
     padding: 0.75rem;
     cursor: pointer;
     &:hover {
