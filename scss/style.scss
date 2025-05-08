@@ -15,6 +15,7 @@
 
 @import "./modules/header";
 @import "./modules/about";
+@import "./modules/pack";
 @import "./modules/faq";
 @import "./modules/footer";
 
@@ -35,7 +36,7 @@ body {
 }
 
 .main__page {
-  background: url(/public/sparkle-bg.png);
+  background: url(/public/bgs/sparkle-bg.png);
   height: fit-content;
 }
 

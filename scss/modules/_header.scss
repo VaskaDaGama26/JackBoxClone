@@ -1,13 +1,13 @@
 .header {
   @include flex(row, $align: center, $justify: space-between);
   @include size($w: 100%, $h: 88px);
-  z-index: 999;
   padding: 1rem 2.5rem;
   background: linear-gradient(180deg, $headerGradient, transparent);
 
   &__wrapper {
     background: $dark-blue;
     position: sticky;
+    z-index: 999;
     top: 0;
   }
   &__left {

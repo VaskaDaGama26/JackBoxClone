@@ -1,0 +1,104 @@
+.pack {
+  @include flex(column, 3.125rem, center, flex-start);
+  @include size($w: 100%, $h: fit-content);
+  padding: 5rem 2.75rem;
+  max-width: 1440px;
+  margin: 0 auto;
+  color: $white;
+
+  &__wrapper {
+    background-image: url("/public/bgs/pack_bg.webp");
+    background-size: 80%;
+    background-position: 50%;
+    text-align: center;
+  }
+  &__info {
+    &__upperheading {
+      @include text(1rem, 400);
+      font-style: italic;
+      margin: 0 0 0.25rem 0;
+    }
+    &__heading {
+      @include text(2rem, 800, $lh: 1);
+      text-transform: uppercase;
+      margin: 0 0 1.5rem 0;
+    }
+    &__label {
+      max-width: 760px;
+      @include text(1rem, $lh: 1.4);
+      margin: 0 0 1rem 0;
+    }
+  }
+  &__list {
+    @include flex(row, 0, center, center, $wrap: wrap);
+    & a {
+      padding: 2.5rem 1.5rem;
+      height: fit-content;
+      width: 20%;
+      cursor: pointer;
+    }
+    &__img {
+      @include size($w: 100%, $h: auto);
+      max-height: 150px;
+      object-fit: contain;
+
+      &:hover {
+        scale: 1.05;
+        transition-duration: 100ms;
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .pack {
+    padding: 6.25rem 5rem;
+
+    &__info {
+      &__heading {
+        font-size: 2.5rem;
+      }
+    }
+  }
+}
+@media screen and (max-width: 600px) {
+  .pack {
+    gap: 1rem;
+    padding: 2.5rem 1rem;
+
+    &__list {
+      overflow-x: scroll;
+      scrollbar-width: none;
+      justify-content: flex-start;
+      flex-wrap: nowrap;
+      height: 180px;
+      padding: 1rem;
+
+      & a {
+        padding: 0.5rem;
+        width: 38%;
+        flex-shrink: 0;
+      }
+      &__img {
+        max-height: 120px;
+      }
+    }
+
+    &__info {
+      &__upperheading {
+        @include text(0.75rem, $align: center);
+      }
+      &__heading {
+        @include text(1.75rem, $align: center);
+      }
+      &__label {
+        font-size: 1rem;
+      }
+    }
+  }
+}
+@media screen and (min-width: 600px) and (max-width: 960px) {
+  .pack {
+    padding: 5rem 1rem;
+  }
+}

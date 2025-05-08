@@ -7,11 +7,21 @@
 
   &__img {
     @include size($w: 100%, $h: 100%);
+    z-index: 0;
     max-width: 580px;
-    background-image: url(/public/cat.webp);
+    background-image: url(/public/imgs/cat.webp);
     background-position: 100% 0;
     background-repeat: no-repeat;
     background-size: cover;
+
+    opacity: 0;
+    transform: translateY(100px);
+    transition: all 1s ease-out;
+
+    &.animate {
+      opacity: 1;
+      transform: translateY(0);
+    }
   }
 
   &__right {
@@ -74,15 +84,26 @@
   }
   &__img {
     @include size($w: 100%, $h: 300px);
-    background-image: url(/public/cat.webp);
+    background-image: url(/public/imgs/cat.webp);
     background-position: 100% 0;
     background-repeat: no-repeat;
     background-size: cover;
+
+    opacity: 0;
+    transform: translateY(100px);
+    transition: all 1s ease-out;
+
+    &.animate {
+      opacity: 1;
+      transform: translateY(0);
+    }
   }
   &__content {
     padding: 0.625rem;
     background-color: $about-mobile-bg;
     border-radius: 1rem 1rem 0 0;
+    position: relative;
+    z-index: 999;
     &__text {
       color: $white;
       & p {
