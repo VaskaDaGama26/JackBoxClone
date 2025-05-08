@@ -51,7 +51,7 @@
         & svg {
           @include size($w: 16px, $h: 16px);
           position: absolute;
-          z-index: 999;
+          z-index: 998;
           margin-top: 15px;
           margin-left: 10px;
         }
@@ -73,7 +73,7 @@
         }
       }
       &__button {
-        @include text(1.125rem, $color: $white);
+        @include text(1.125rem, 600, $color: $white);
         margin-top: 1rem;
         width: 100%;
         padding: 1rem 1.25rem;
@@ -98,7 +98,7 @@
 
       &.animate {
         opacity: 1;
-        transform: translateY(0);
+        transform: translateX(0);
       }
     }
   }

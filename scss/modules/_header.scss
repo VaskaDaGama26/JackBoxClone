@@ -7,8 +7,8 @@
   &__wrapper {
     background: $dark-blue;
     position: sticky;
-    z-index: 999;
     top: 0;
+    z-index: 999;
   }
   &__left {
     @include flex(row, $align: center);
@@ -46,6 +46,63 @@
   }
 }
 
+.nav__mobile {
+  @include flex(column, 0.75rem, flex-end);
+  @include size($w: 300px, $h: 100%);
+  position: fixed;
+  z-index: 999;
+  left: 0;
+  top: 0;
+  background-color: $bg-mobile-nav;
+  border-radius: 0 3rem 0 0;
+  padding: 1.5rem;
+  visibility: hidden;
+  pointer-events: none;
+
+  transform: translateX(-300px);
+  transition: all 1s;
+
+  &.open {
+    visibility: visible;
+    pointer-events: auto;
+    transform: translateX(0);
+  }
+
+  &__list {
+    @include flex(column, 1.5rem, flex-start);
+    width: 100%;
+    padding: 0;
+    margin: 0;
+    list-style-type: none;
+
+    & a {
+      text-decoration: none;
+    }
+
+    &__item {
+      @include flex(row, 0.4rem, center, center);
+      @include text(1.25rem, 700, $color: $white);
+      cursor: pointer;
+      &:hover {
+        color: $purple;
+      }
+    }
+  }
+}
+.bg__mobile {
+  display: none;
+  background-color: $bg-mobile-page;
+  height: 100%;
+  left: 0;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 199;
+  &.open {
+    display: block;
+  }
+}
+
 @media screen and (min-width: 1280px) {
   .header {
     padding: 1rem 5rem;
@@ -61,5 +118,10 @@
   .header {
     height: 56px;
     padding: 1rem;
+  }
+}
+@media screen and (min-width: 960px) {
+  .nav__mobile {
+    visibility: hidden;
   }
 }

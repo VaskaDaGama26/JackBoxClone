@@ -65,12 +65,13 @@
   }
 
   &__button {
-    @include text(0.875rem, $color: $white);
+    @include text(0.875rem, 600, $color: $white);
     margin-top: 1.25rem;
-    padding: 0.5rem 1rem;
+    padding: 1rem 1.25rem;
     background: transparent;
     border: 1px solid $white;
     border-radius: 0.25rem;
+    cursor: pointer;
   }
 }
 

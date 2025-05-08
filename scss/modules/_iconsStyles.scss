@@ -45,7 +45,19 @@
   display: none;
   margin-left: 0.75rem;
   color: $white;
+  cursor: pointer;
 
+  &:hover {
+    color: $purple;
+  }
+}
+.close {
+  color: $white;
+  cursor: pointer;
+  & svg {
+    @include size($w: 36px, $h: 36px);
+  }
+  @include size($w: 36px, $h: 36px);
   &:hover {
     color: $purple;
   }
