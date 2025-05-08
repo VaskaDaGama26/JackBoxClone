@@ -1,0 +1,130 @@
+.contact {
+  @include flex(row, 1rem, $justify: space-between);
+  height: fit-content;
+  max-width: 1440px;
+  margin: 0 auto;
+  padding: 3.125rem 2.5rem;
+  &__wrapper {
+    background: radial-gradient(76.37% 50% at 50% 50%, #419544 28.89%, #276829);
+  }
+
+  &__left {
+    max-width: 440px;
+    color: $white;
+
+    &__heading {
+      @include text(2.5rem, 800);
+      margin: 0 0 1.5rem 0;
+      text-transform: uppercase;
+    }
+    &__underheading {
+      @include text(1.25rem, 600);
+      margin: 0 0 1.25rem 0;
+    }
+    &__desc {
+      @include text(1rem, 400);
+      margin: 0 0 1rem 0;
+    }
+
+    &__socials {
+      &__heading {
+        @include text(1.25rem, 600);
+        margin: 0 0 1.25rem 0;
+      }
+      &__icons {
+        @include flex(row, $align: center, $justify: space-between);
+        padding-bottom: 1.5rem;
+      }
+    }
+    &__form {
+      &__heading {
+        @include text(1.25rem, 600);
+        margin: 0 0 1.25rem 0;
+      }
+      &__desc {
+        @include text(1rem, 400);
+        margin: 0 0 1rem 0;
+      }
+      &__email {
+        color: $light-gray;
+        width: 100%;
+        & svg {
+          @include size($w: 16px, $h: 16px);
+          position: absolute;
+          z-index: 999;
+          margin-top: 15px;
+          margin-left: 10px;
+        }
+        &__input {
+          @include size($w: 100%, $h: 48px);
+          position: relative;
+          background-color: $white;
+          padding: 0 0 0 2.25rem;
+          border-width: 0 0 2px 0;
+          border-color: $purple;
+          border-radius: 0.25rem 0.25rem 0 0;
+          caret-color: $black;
+          color: $light-gray;
+
+          &::placeholder {
+            color: $light-gray;
+            font-size: 0.875rem;
+          }
+        }
+      }
+      &__button {
+        @include text(1.125rem, $color: $white);
+        margin-top: 1rem;
+        width: 100%;
+        padding: 1rem 1.25rem;
+        background: transparent;
+        border: 1px solid $white;
+        border-radius: 0.25rem;
+      }
+    }
+  }
+
+  &__right {
+    @include flex(row, $align: center, $justify: center);
+
+    & img {
+      max-height: 300px;
+      max-width: none;
+    }
+    &__img {
+      opacity: 0;
+      transform: translateX(100px);
+      transition: all 1s ease-out;
+
+      &.animate {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .contact {
+    padding: 3.125rem 5rem;
+  }
+}
+
+@media screen and (max-width: 960px) {
+  .contact {
+    padding: 3.125rem 1rem;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .contact {
+    flex-direction: column;
+    padding: 2.5rem 1rem;
+    gap: 1.875rem;
+
+    &__left {
+      max-width: none;
+      width: 100%;
+    }
+  }
+}

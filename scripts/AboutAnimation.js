@@ -1,6 +1,11 @@
 document.addEventListener("DOMContentLoaded", () => {
   const targets = document.querySelectorAll(".about__img, .about__mobile__img");
 
+  if (!targets) {
+    console.warn("Элемент about__img, .about__mobile__img не найден");
+    return;
+  }
+
   const observer = new IntersectionObserver(
     (entries) => {
       entries.forEach((entry) => {
