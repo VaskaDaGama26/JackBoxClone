@@ -2,8 +2,10 @@
   "name": "jackboxclone",
   "version": "1.0.0",
   "main": "index.js",
+  "homepage": "https://vaskadagama26.github.io/JackBoxClone/",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "deploy": "gh-pages -d ."
   },
   "keywords": [],
   "author": "",
@@ -11,5 +13,8 @@
   "description": "",
   "dependencies": {
     "sass": "^1.87.0"
+  },
+  "devDependencies": {
+    "gh-pages": "^6.3.0"
   }
 }
