@@ -2,7 +2,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap");
 
 // IMPORT RESET STYLES FILE
-@import url(./css/reset.css);
+@import url(./reset.css);
 
 // MIXINS
 @import "./mixins/flex";
@@ -43,7 +43,7 @@ body {
 }
 
 .main__page {
-  background: url("./public/bgs/sparkle-bg.png");
+  background: url("../public/bgs/sparkle-bg.png");
   background-attachment: fixed;
   height: fit-content;
 }
