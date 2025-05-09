@@ -11,7 +11,7 @@
     position: relative;
     z-index: 0;
     max-width: 580px;
-    background-image: url(./public/imgs/cat.webp);
+    background-image: url(../public/imgs/cat.webp);
     background-position: 100% 0;
     background-repeat: no-repeat;
     background-size: cover;
@@ -87,7 +87,7 @@
   }
   &__img {
     @include size($w: 100%, $h: 300px);
-    background-image: url(./public/imgs/cat.webp);
+    background-image: url(../public/imgs/cat.webp);
     background-position: 100% 0;
     background-repeat: no-repeat;
     background-size: cover;
