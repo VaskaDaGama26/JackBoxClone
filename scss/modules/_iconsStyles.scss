@@ -73,8 +73,17 @@
   }
 }
 
+.controls__button__img {
+  @include size($w: 16px, $h: 16px);
+}
+
 @media screen and (max-width: 960px) {
   .logo img {
     @include size($w: 85px, $h: 32px);
   }
+}
+
+// PLATFORMS
+.platform__icon {
+    color: $white;
 }

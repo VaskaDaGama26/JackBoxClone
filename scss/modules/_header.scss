@@ -2,7 +2,7 @@
   @include flex(row, $align: center, $justify: space-between);
   @include size($w: 100%, $h: 88px);
   padding: 1rem 2.5rem;
-  background: linear-gradient(180deg, $headerGradient, transparent);
+  background: $headerGradient;
 
   &__wrapper {
     background: $dark-blue;
@@ -90,13 +90,12 @@
   }
 }
 .bg__mobile {
+  @include size($w: 100%, $h: 100%);
   display: none;
   background-color: $bg-mobile-page;
-  height: 100%;
-  left: 0;
   position: fixed;
+  left: 0;
   top: 0;
-  width: 100%;
   z-index: 199;
   &.open {
     display: block;

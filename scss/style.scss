@@ -13,16 +13,21 @@
 @import "./modules/colors";
 @import "./modules/iconsStyles";
 
+// COMPS
 @import "./modules/header";
+
+@import "./modules/modal";
+
+@import "./modules/carousel";
 @import "./modules/about";
 @import "./modules/blog";
 @import "./modules/pack";
 @import "./modules/contact";
 @import "./modules/faq";
+
 @import "./modules/footer";
 
 html {
-  @include size($w: 100dvw, $h: 100dvh);
   font-family: "Inter";
   font-size: 16px;
   background: $black;
@@ -39,6 +44,7 @@ body {
 
 .main__page {
   background: url(/public/bgs/sparkle-bg.png);
+  background-attachment: fixed;
   height: fit-content;
 }
 

@@ -8,10 +8,20 @@ $dark-blue: #181c23;
 $purple: #b2bbff;
 
 // ADDITIONAL VARIABLES
-$headerGradient: rgba(0, 0, 0, 0.9);
+$headerGradient: linear-gradient(180deg, rgba(0, 0, 0, 0.9), transparent);
+$buttonGradientPurple: linear-gradient(90deg, #9ca7fe, #c0c7ff);
+$buttonGradientBlue: linear-gradient(92.89deg, #6aa4fe 0.06%, #6070e5 100.06%);
+$glassBG: linear-gradient(108.46deg, #b6e0ff16, #b6e0ff22);
+$contactGradient: radial-gradient(
+  76.37% 50% at 50% 50%,
+  #419544 28.89%,
+  #276829
+);
 $gray-bg: #3a3c43;
 $darker-gray-bg: #303238;
 $gray-border: #64748b;
 $about-mobile-bg: #272a31;
 $bg-mobile-nav: #212935;
 $bg-mobile-page: #000c;
+$bg-modal: #292c33;
+$purpleButtonShadow: 0px 0px 20px 10px rgba(178, 187, 255, 0.5);

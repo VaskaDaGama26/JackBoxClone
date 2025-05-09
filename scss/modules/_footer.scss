@@ -1,5 +1,4 @@
 .footer {
-  height: 266px;
   padding: 5rem 2.5rem;
 }
 
@@ -23,7 +22,6 @@
   @include flex(row, $align: center, $justify: space-between);
   color: $white;
   text-align: center;
-  padding-top: 1.25rem;
   &__label {
     font-size: 1rem;
   }

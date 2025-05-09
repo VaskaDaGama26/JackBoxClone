@@ -89,7 +89,7 @@
                   </div>
                 </li>
               </a>
-              <a href="#signup">
+              <a href="" class="signup">
                 <li class="nav__item">Sign Up</li>
               </a>
             </ul>
@@ -169,7 +169,7 @@
                   </div>
                 </li>
               </a>
-              <a href="#signup">
+              <a href="" class="signup">
                 <li class="nav__mobile__list__item">Sign Up</li>
               </a>
             </ul>
@@ -240,7 +240,325 @@
       </div>
     </header>
 
+    <!-- SIGNUP MODAL -->
+    <div class="modal" id="signupModal">
+      <div class="modal__content">
+        <span class="modal__close">&times;</span>
+        <h2>Registration</h2>
+        <form id="signupForm">
+          <label for="username">Username</label>
+          <input type="text" id="username" name="username" required />
+
+          <label for="email">Email</label>
+          <input type="email" id="email" name="email" required />
+
+          <label for="password">Password</label>
+          <input type="password" id="password" name="password" required />
+
+          <button type="submit">Sign up</button>
+        </form>
+      </div>
+    </div>
+
+    <!-- MAINPAGE -->
     <section class="main__page">
+      <!-- CAROUSEL BLOCK -->
+      <div class="carousel__wrapper">
+        <div class="carousel">
+          <!-- JBG -->
+          <div class="carousel__item">
+            <div class="jbg"></div>
+            <div class="jbg-mobile"></div>
+            <!-- CARDS (UNDONE) -->
+            <!-- <div class="cards">
+              <div class="card">
+                <img
+                  src="/public/carousel/overlay/jbg-overlay-1.webp"
+                  alt="TMP3"
+                />
+                <button class="card__button">Learn More</button>
+              </div>
+              <div class="card">
+                <img
+                  src="/public/carousel/overlay/jbg-overlay-2.webp"
+                  alt="JBPP11"
+                />
+                <button class="card__button">Learn More</button>
+              </div>
+            </div> -->
+          </div>
+          <!-- SURVEY -->
+          <div class="carousel__item">
+            <div class="survey"></div>
+            <div class="survey-mobile"></div>
+            <div class="survey__overlay">
+              <img
+                src="/public/carousel/overlay/survey-overlay-1.webp"
+                alt="Survey"
+                class="overlay__img"
+              />
+              <button class="overlay__button">Sign Up</button>
+              <div class="platform">
+                <!-- SWITCH -->
+                <img
+                  class="platform__icon"
+                  src="/public/carousel/overlay/icons/switch.svg"
+                  alt="Switch"
+                />
+                <!-- XBOX -->
+                <img
+                  class="platform__icon"
+                  src="/public/carousel/overlay/icons/xbox.svg"
+                  alt="Xbox"
+                />
+                <!-- PS -->
+                <img
+                  class="platform__icon"
+                  src="/public/carousel/overlay/icons/ps.svg"
+                  alt="PlayStation"
+                />
+                <!-- STEAM -->
+                <img
+                  class="platform__icon"
+                  src="/public/carousel/overlay/icons/steam.svg"
+                  alt="Steam"
+                />
+                <!-- MAC -->
+                <img
+                  class="platform__icon"
+                  src="/public/carousel/overlay/icons/mac.svg"
+                  alt="Apple"
+                />
+                <!-- AMAZON -->
+                <img
+                  class="platform__icon"
+                  src="/public/carousel/overlay/icons/amazon.svg"
+                  alt="Amazon"
+                />
+                <!-- EPIC -->
+                <img
+                  class="platform__icon"
+                  src="/public/carousel/overlay/icons/epicgames.svg"
+                  alt="Epic"
+                />
+                <!-- HUMBLE -->
+                <img
+                  class="platform__icon"
+                  src="/public/carousel/overlay/icons/humble.svg"
+                  alt="Humble"
+                />
+              </div>
+            </div>
+          </div>
+          <!-- NP -->
+          <div class="carousel__item">
+            <div class="np"></div>
+            <div class="np-mobile"></div>
+            <div class="np__overlay">
+              <img
+                src="/public/carousel/overlay/np-overlay-1.webp"
+                alt="Naughty Pack"
+                class="overlay__img"
+              />
+              <button class="overlay__button">Sign Up</button>
+              <div class="platform">
+                <!-- SWITCH -->
+                <img
+                  class="platform__icon"
+                  src="/public/carousel/overlay/icons/switch.svg"
+                  alt="Switch"
+                />
+                <!-- XBOX -->
+                <img
+                  class="platform__icon"
+                  src="/public/carousel/overlay/icons/xbox.svg"
+                  alt="Xbox"
+                />
+                <!-- PS -->
+                <img
+                  class="platform__icon"
+                  src="/public/carousel/overlay/icons/ps.svg"
+                  alt="PlayStation"
+                />
+                <!-- STEAM -->
+                <img
+                  class="platform__icon"
+                  src="/public/carousel/overlay/icons/steam.svg"
+                  alt="Steam"
+                />
+                <!-- MAC -->
+                <img
+                  class="platform__icon"
+                  src="/public/carousel/overlay/icons/mac.svg"
+                  alt="Apple"
+                />
+                <!-- AMAZON -->
+                <img
+                  class="platform__icon"
+                  src="/public/carousel/overlay/icons/amazon.svg"
+                  alt="Amazon"
+                />
+                <!-- EPIC -->
+                <img
+                  class="platform__icon"
+                  src="/public/carousel/overlay/icons/epicgames.svg"
+                  alt="Epic"
+                />
+                <!-- HUMBLE -->
+                <img
+                  class="platform__icon"
+                  src="/public/carousel/overlay/icons/humble.svg"
+                  alt="Humble"
+                />
+              </div>
+            </div>
+          </div>
+          <!-- MEGA -->
+          <div class="carousel__item">
+            <div class="mega"></div>
+            <div class="mega-mobile"></div>
+            <div class="mega__overlay">
+              <img
+                src="/public/carousel/overlay/mega-overlay-1.webp"
+                alt="Mega"
+                class="overlay__img"
+              />
+              <button class="overlay__button">Sign Up</button>
+              <div class="platform">
+                <!-- SWITCH -->
+                <img
+                  class="platform__icon"
+                  src="/public/carousel/overlay/icons/switch.svg"
+                  alt="Switch"
+                />
+                <!-- XBOX -->
+                <img
+                  class="platform__icon"
+                  src="/public/carousel/overlay/icons/xbox.svg"
+                  alt="Xbox"
+                />
+                <!-- PS -->
+                <img
+                  class="platform__icon"
+                  src="/public/carousel/overlay/icons/ps.svg"
+                  alt="PlayStation"
+                />
+                <!-- STEAM -->
+                <img
+                  class="platform__icon"
+                  src="/public/carousel/overlay/icons/steam.svg"
+                  alt="Steam"
+                />
+                <!-- MAC -->
+                <img
+                  class="platform__icon"
+                  src="/public/carousel/overlay/icons/mac.svg"
+                  alt="Apple"
+                />
+                <!-- AMAZON -->
+                <img
+                  class="platform__icon"
+                  src="/public/carousel/overlay/icons/amazon.svg"
+                  alt="Amazon"
+                />
+                <!-- EPIC -->
+                <img
+                  class="platform__icon"
+                  src="/public/carousel/overlay/icons/epicgames.svg"
+                  alt="Epic"
+                />
+                <!-- HUMBLE -->
+                <img
+                  class="platform__icon"
+                  src="/public/carousel/overlay/icons/humble.svg"
+                  alt="Humble"
+                />
+              </div>
+            </div>
+          </div>
+          <!-- VID -->
+          <div class="carousel__item">
+            <div class="vid">
+              <video autoplay muted loop playsinline>
+                <source src="/public/carousel/vid.webm" type="video/mp4" />
+              </video>
+            </div>
+            <div class="vid-mobile"></div>
+            <div class="vid__overlay">
+              <img
+                src="/public/carousel/overlay/vid-overlay-1.webp"
+                alt="Vid"
+                class="overlay__img"
+              />
+              <button class="overlay__button">Sign Up</button>
+              <div class="platform">
+                <!-- SWITCH -->
+                <img
+                  class="platform__icon"
+                  src="/public/carousel/overlay/icons/switch.svg"
+                  alt="Switch"
+                />
+                <!-- XBOX -->
+                <img
+                  class="platform__icon"
+                  src="/public/carousel/overlay/icons/xbox.svg"
+                  alt="Xbox"
+                />
+                <!-- PS -->
+                <img
+                  class="platform__icon"
+                  src="/public/carousel/overlay/icons/ps.svg"
+                  alt="PlayStation"
+                />
+                <!-- STEAM -->
+                <img
+                  class="platform__icon"
+                  src="/public/carousel/overlay/icons/steam.svg"
+                  alt="Steam"
+                />
+                <!-- MAC -->
+                <img
+                  class="platform__icon"
+                  src="/public/carousel/overlay/icons/mac.svg"
+                  alt="Apple"
+                />
+                <!-- AMAZON -->
+                <img
+                  class="platform__icon"
+                  src="/public/carousel/overlay/icons/amazon.svg"
+                  alt="Amazon"
+                />
+                <!-- EPIC -->
+                <img
+                  class="platform__icon"
+                  src="/public/carousel/overlay/icons/epicgames.svg"
+                  alt="Epic"
+                />
+                <!-- HUMBLE -->
+                <img
+                  class="platform__icon"
+                  src="/public/carousel/overlay/icons/humble.svg"
+                  alt="Humble"
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- CONTROLS -->
+        <div class="controls">
+          <div class="controls__button left" role="button">
+            <img src="/public/arrow.svg" alt="" class="controls__button__img" />
+          </div>
+          <div class="controls__dot" role="button"></div>
+          <div class="controls__dot" role="button"></div>
+          <div class="controls__dot" role="button"></div>
+          <div class="controls__dot" role="button"></div>
+          <div class="controls__dot" role="button"></div>
+          <div class="controls__button right" role="button">
+            <img src="/public/arrow.svg" alt="" class="controls__button__img" />
+          </div>
+        </div>
+      </div>
       <!-- ABOUT BLOCK -->
       <div class="about">
         <div class="about__img"></div>
@@ -426,48 +744,112 @@
           </div>
           <div class="pack__list">
             <a href="#naughty">
-              <img
-                src="/public/packs/naughty.webp"
-                alt=""
-                class="pack__list__img"
-              />
+              <div class="pack__list__img__wrapper">
+                <img
+                  src="/public/packs/naughty.webp"
+                  alt=""
+                  class="pack__list__img"
+                />
+              </div>
             </a>
             <a href="#10">
-              <img src="/public/packs/10.webp" alt="" class="pack__list__img" />
+              <div class="pack__list__img__wrapper">
+                <img
+                  src="/public/packs/10.webp"
+                  alt=""
+                  class="pack__list__img"
+                />
+              </div>
             </a>
             <a href="#9">
-              <img src="/public/packs/9.webp" alt="" class="pack__list__img" />
+              <div class="pack__list__img__wrapper">
+                <img
+                  src="/public/packs/9.webp"
+                  alt=""
+                  class="pack__list__img"
+                />
+              </div>
             </a>
             <a href="#starter">
-              <img
-                src="/public/packs/starter.webp"
-                alt=""
-                class="pack__list__img"
-              />
+              <div class="pack__list__img__wrapper">
+                <img
+                  src="/public/packs/starter.webp"
+                  alt=""
+                  class="pack__list__img"
+                />
+              </div>
             </a>
             <a href="#8">
-              <img src="/public/packs/8.webp" alt="" class="pack__list__img" />
+              <div class="pack__list__img__wrapper">
+                <img
+                  src="/public/packs/8.webp"
+                  alt=""
+                  class="pack__list__img"
+                />
+              </div>
             </a>
             <a href="#7">
-              <img src="/public/packs/7.webp" alt="" class="pack__list__img" />
+              <div class="pack__list__img__wrapper">
+                <img
+                  src="/public/packs/7.webp"
+                  alt=""
+                  class="pack__list__img"
+                />
+              </div>
             </a>
             <a href="#6">
-              <img src="/public/packs/6.webp" alt="" class="pack__list__img" />
+              <div class="pack__list__img__wrapper">
+                <img
+                  src="/public/packs/6.webp"
+                  alt=""
+                  class="pack__list__img"
+                />
+              </div>
             </a>
             <a href="#5">
-              <img src="/public/packs/5.webp" alt="" class="pack__list__img" />
+              <div class="pack__list__img__wrapper">
+                <img
+                  src="/public/packs/5.webp"
+                  alt=""
+                  class="pack__list__img"
+                />
+              </div>
             </a>
             <a href="#4">
-              <img src="/public/packs/4.webp" alt="" class="pack__list__img" />
+              <div class="pack__list__img__wrapper">
+                <img
+                  src="/public/packs/4.webp"
+                  alt=""
+                  class="pack__list__img"
+                />
+              </div>
             </a>
             <a href="#3">
-              <img src="/public/packs/3.webp" alt="" class="pack__list__img" />
+              <div class="pack__list__img__wrapper">
+                <img
+                  src="/public/packs/3.webp"
+                  alt=""
+                  class="pack__list__img"
+                />
+              </div>
             </a>
             <a href="#2">
-              <img src="/public/packs/2.webp" alt="" class="pack__list__img" />
+              <div class="pack__list__img__wrapper">
+                <img
+                  src="/public/packs/2.webp"
+                  alt=""
+                  class="pack__list__img"
+                />
+              </div>
             </a>
             <a href="#1">
-              <img src="/public/packs/1.webp" alt="" class="pack__list__img" />
+              <div class="pack__list__img__wrapper">
+                <img
+                  src="/public/packs/1.webp"
+                  alt=""
+                  class="pack__list__img"
+                />
+              </div>
             </a>
           </div>
         </div>
@@ -920,10 +1302,13 @@
         </div>
       </div>
     </footer>
+
     <!-- SCRIPTS -->
     <script src="/scripts/Accordion.js"></script>
     <script src="/scripts/AboutAnimation.js"></script>
     <script src="/scripts/ContactAnimation.js"></script>
     <script src="/scripts/MobileMenu.js"></script>
+    <script src="/scripts/SignupForm.js"></script>
+    <script src="/scripts/Carousel.js"></script>
   </body>
 </html>

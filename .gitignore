@@ -2,3 +2,5 @@
 node_modules
 # CSS Map Files
 *.css.map
+# Mac file
+.DS_Store

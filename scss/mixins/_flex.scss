@@ -11,6 +11,6 @@
     justify-content: $justify;
   }
   @if $wrap != null {
-    flex-wrap: wrap;
+    flex-wrap: $wrap;
   }
 }

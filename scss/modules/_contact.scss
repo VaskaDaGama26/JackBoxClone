@@ -5,7 +5,8 @@
   margin: 0 auto;
   padding: 3.125rem 2.5rem;
   &__wrapper {
-    background: radial-gradient(76.37% 50% at 50% 50%, #419544 28.89%, #276829);
+    background: $contactGradient;
+    overflow-x: hidden;
   }
 
   &__left {
