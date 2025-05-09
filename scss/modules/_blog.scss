@@ -1,0 +1,116 @@
+.blog {
+  @include flex(column, $align: flex-start, $justify: center);
+  height: fit-content;
+  max-width: 1440px;
+  margin: 0 auto;
+  padding: 5rem 2.75rem;
+
+  &__wrapper {
+    position: relative;
+    z-index: 990;
+    background-image: url("/public//bgs/blog_bg.webp");
+  }
+
+  &__info {
+    color: $white;
+    &__upperheading {
+      @include text(1rem, 400);
+      font-style: italic;
+      margin: 0 0 0.25rem 0;
+    }
+    &__heading {
+      @include text(2.5rem, 800, $lh: 1);
+      text-transform: uppercase;
+      margin: 0 0 1.5rem 0;
+    }
+  }
+
+  &__news {
+    @include flex(
+      row,
+      $align: flex-start,
+      $justify: space-between,
+      $wrap: wrap
+    );
+    width: 100%;
+
+    & a {
+      @include flex(column, 0.5rem, flex-start, center);
+      padding: 0.625rem;
+      max-width: 370px;
+      text-decoration: none;
+    }
+
+    &__img {
+      height: auto;
+      max-width: 350px;
+      aspect-ratio: 1.5 / 1;
+      border-radius: 0.75rem;
+
+      &:hover {
+        transform: scale(1.05);
+        outline: 3px solid $white;
+        transition: transform 0.2s;
+      }
+    }
+    &__heading {
+      @include text(0.875rem, 600, $lh: 1.25rem, $color: $white);
+      margin: 0;
+    }
+    &__date {
+      @include text(0.875rem, 400, $color: $white);
+      font-style: italic;
+      margin: 0;
+    }
+  }
+
+  &__button {
+    @include text(0.875rem, 600, $color: $white);
+    margin-top: 1.25rem;
+    padding: 1rem 1.25rem;
+    background: transparent;
+    border: 1px solid $white;
+    border-radius: 0.25rem;
+    cursor: pointer;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .blog {
+    padding: 6.25rem 5rem;
+
+    &__news a {
+      max-width: 300px;
+    }
+    &__news__img {
+      max-width: 285px;
+      aspect-ratio: 1.5 / 1;
+    }
+  }
+}
+@media screen and (max-width: 960px) and (min-width: 600px) {
+  .blog {
+    padding: 5rem 1rem;
+  }
+}
+@media screen and (max-width: 600px) {
+  .blog {
+    padding: 2.75rem 1rem;
+
+    &__button {
+      width: 100%;
+    }
+  }
+}
+@media screen and (max-width: 780px) {
+  .blog {
+    align-items: center;
+
+    &__news {
+      justify-content: center;
+      &__img {
+        max-width: 100%;
+      }
+    }
+  }
+}

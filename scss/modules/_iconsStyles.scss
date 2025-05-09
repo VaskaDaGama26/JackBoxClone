@@ -1,0 +1,89 @@
+// LOGO
+.logo {
+  @include flex(row, $align: center);
+  width: fit-content;
+
+  &__img {
+    @include size($w: auto, $h: 38px);
+  }
+
+  &:hover {
+    filter: brightness(0) saturate(100%) invert(66%) sepia(58%) saturate(429%)
+      hue-rotate(199deg) brightness(102%) contrast(106%);
+  }
+}
+
+// **NAV**
+
+// ARROW
+.arrow {
+  @include flex(row, $align: center);
+  @include size($w: 6px, $h: 100%);
+}
+// GLOBE AND CART
+.globe,
+.cart {
+  @include size($w: 20px, $h: 20px);
+  & .primary {
+    color: $white;
+  }
+  & .secondary {
+    color: $gray;
+  }
+  &:hover {
+    & .primary {
+      color: $purple;
+    }
+    & .secondary {
+      color: $dark-gray;
+    }
+  }
+}
+// BURGER
+.menu {
+  @include size($w: 20px, $h: auto);
+  display: none;
+  margin-left: 0.75rem;
+  color: $white;
+  cursor: pointer;
+
+  &:hover {
+    color: $purple;
+  }
+}
+.close {
+  color: $white;
+  cursor: pointer;
+  & svg {
+    @include size($w: 36px, $h: 36px);
+  }
+  @include size($w: 36px, $h: 36px);
+  &:hover {
+    color: $purple;
+  }
+}
+
+.question__icon {
+  color: $white;
+  @include size($w: 14px, $h: 16px);
+  transition-duration: 300ms;
+
+  &.open {
+    transform: rotateZ(45deg);
+  }
+}
+
+.controls__button__img {
+  @include size($w: 16px, $h: 16px);
+}
+
+@media screen and (max-width: 960px) {
+  .logo img {
+    @include size($w: 85px, $h: 32px);
+  }
+}
+
+// PLATFORMS
+.platform__icon {
+    color: $white;
+}

@@ -1,0 +1,5 @@
+// USE ONLY OF BOTH VALUES
+@mixin size($w, $h) {
+  width: $w;
+  height: $h;
+}

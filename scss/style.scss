@@ -1,0 +1,56 @@
+// IMPORT INTER FONT
+@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap");
+
+// IMPORT RESET STYLES FILE
+@import url(/css/reset.css);
+
+// MIXINS
+@import "./mixins/flex";
+@import "./mixins//size";
+@import "./mixins/text";
+
+// MODULES
+@import "./modules/colors";
+@import "./modules/iconsStyles";
+
+// COMPS
+@import "./modules/header";
+
+@import "./modules/modal";
+
+@import "./modules/carousel";
+@import "./modules/about";
+@import "./modules/blog";
+@import "./modules/pack";
+@import "./modules/contact";
+@import "./modules/faq";
+
+@import "./modules/footer";
+
+html {
+  font-family: "Inter";
+  font-size: 16px;
+  background: $black;
+}
+body {
+  background: linear-gradient(
+    180deg,
+    #1c2128d9 7%,
+    #181c23 36%,
+    #14171f 71%,
+    #000 100%
+  );
+}
+
+.main__page {
+  background: url(/public/bgs/sparkle-bg.png);
+  background-attachment: fixed;
+  height: fit-content;
+}
+
+// FOCUS FOR ALL ELEMENTS
+:focus {
+  outline: none;
+  box-shadow: 0 0 0 1px $purple;
+  border-radius: 4px;
+}

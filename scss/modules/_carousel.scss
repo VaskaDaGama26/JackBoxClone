@@ -1,0 +1,339 @@
+.carousel {
+  @include flex(row, 1.25rem, $justify: flex-start, $wrap: nowrap);
+  margin: 32px 0;
+  overflow-x: scroll;
+  scroll-behavior: smooth;
+  scroll-snap-type: x mandatory;
+  scrollbar-width: none;
+
+  &__wrapper {
+    @include flex(column, 0);
+  }
+
+  &__item {
+    @include size($w: 88vw, $h: 100%);
+    position: relative;
+    aspect-ratio: 2.2;
+    border-radius: 16px;
+    flex-shrink: 0;
+    max-width: 1280px;
+    overflow: hidden;
+    scroll-snap-align: center;
+
+    &:first-child {
+      margin-left: 6vw;
+    }
+    &:last-child {
+      margin-right: 6vw;
+    }
+
+    & .jbg,
+    & .survey,
+    & .np,
+    & .mega,
+    & .vid-mobile {
+      @include flex(row-reverse, 0, $justify: space-between);
+      @include size($w: 100%, $h: 100%);
+      background-position: 50%;
+      background-repeat: no-repeat;
+      background-size: cover;
+      position: relative;
+    }
+
+    & .jbg,
+    & .survey,
+    & .np,
+    & .mega {
+      &-mobile {
+        @include size($w: 100%, $h: 100%);
+        display: none;
+        background-position: 50%;
+        background-repeat: no-repeat;
+        background-size: cover;
+        position: relative;
+      }
+    }
+    // OVERLAYS
+    & .survey,
+    & .np,
+    & .mega {
+      &__overlay {
+        @include flex(column, 1.125rem, center, center);
+        max-width: 340px;
+        position: absolute;
+        inset: 0;
+        z-index: 10;
+        margin: 0 5rem;
+      }
+    }
+    & .vid {
+      &__overlay {
+        @include flex(column, 1.125rem, center, center);
+        max-width: 500px;
+        position: absolute;
+        inset: 0;
+        z-index: 10;
+        padding: 0 5rem;
+      }
+    }
+
+    // GRADIENT
+    & .survey,
+    & .np,
+    & .mega,
+    & .survey-mobile,
+    & .np-mobile,
+    & .mega-mobile,
+    & .vid-mobile {
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+    }
+    // VIDEO GRADIENT
+    & .vid__overlay {
+      background: linear-gradient(
+        90deg,
+        rgba(0, 0, 0, 0.8),
+        rgba(0, 0, 0, 0.6) 80%,
+        transparent
+      );
+    }
+
+    // SLIDES PATHS
+    & .jbg {
+      background-image: url("/public/carousel/1.webp");
+    }
+    & .survey {
+      background-image: linear-gradient(
+          -90deg,
+          #00000000 48.54%,
+          rgba(0, 0, 0, 0.6) 60.18%
+        ),
+        url("/public/carousel/2.webp");
+    }
+    & .np {
+      background-image: linear-gradient(
+          -90deg,
+          #00000000 48.54%,
+          rgba(0, 0, 0, 0.6) 60.18%
+        ),
+        url("/public/carousel/3.webp");
+    }
+    & .mega {
+      background-image: linear-gradient(
+          -90deg,
+          #00000000 48.54%,
+          rgba(0, 0, 0, 0.6) 60.18%
+        ),
+        url("/public/carousel/4.webp");
+    }
+    // MOBILE SLIDES PATHS
+    & .jbg-mobile {
+      display: none;
+      background-image: url("/public/carousel/1-mobile.webp");
+    }
+    & .survey-mobile {
+      display: none;
+      background-image: linear-gradient(
+          180deg,
+          #00000000 48.54%,
+          rgba(0, 0, 0, 0.6) 60.18%
+        ),
+        url("/public/carousel/2-mobile.webp");
+    }
+    & .np-mobile {
+      display: none;
+      background-image: linear-gradient(
+          180deg,
+          #00000000 48.54%,
+          rgba(0, 0, 0, 0.6) 60.18%
+        ),
+        url("/public/carousel/3-mobile.webp");
+    }
+    & .mega-mobile {
+      display: none;
+      background-image: linear-gradient(
+          180deg,
+          #00000000 48.54%,
+          rgba(0, 0, 0, 0.6) 60.18%
+        ),
+        url("/public/carousel/4-mobile.webp");
+    }
+    & .vid-mobile {
+      display: none;
+      background-image: linear-gradient(
+          180deg,
+          #00000000 48.54%,
+          rgba(0, 0, 0, 0.6) 60.18%
+        ),
+        url("/public/carousel/5-mobile.webp");
+    }
+  }
+}
+
+.controls {
+  @include flex(row, 1rem, center, center);
+  &__button {
+    margin: 0 1.25rem;
+    opacity: 0.4;
+    cursor: pointer;
+    &.left {
+      transform: scaleX(-1);
+    }
+    &.active {
+      opacity: 1;
+    }
+  }
+  &__dot {
+    @include size($w: 15px, $h: 15px);
+    background-color: #71768e;
+    border-radius: 50%;
+    cursor: pointer;
+    display: inline-block;
+    transition: all 0.1s ease-out;
+
+    &.active {
+      background-color: #b2bbff;
+      filter: drop-shadow(0 0 7.452px #b2bbff);
+    }
+  }
+}
+
+// OVERLAY ELEMENTS
+.platform {
+  @include flex(row, 0.75rem, center, space-between);
+}
+.overlay__button {
+  @include text(1rem, 800, left, 1rem);
+  @include flex(row, 0, center, center);
+  text-transform: uppercase;
+  font-family: "Inter";
+  width: 100%;
+  background: $buttonGradientPurple;
+  border: none;
+  border-radius: 4px;
+  color: $black;
+  cursor: pointer;
+  padding: 1rem;
+  transition-duration: 0.1s;
+
+  &:hover {
+    box-shadow: $purpleButtonShadow;
+  }
+}
+.overlay__img {
+  max-height: 200px;
+}
+
+@media screen and (min-width: 1680px) {
+  .carousel {
+    &__item {
+      &:first-child {
+        margin-left: 25%;
+      }
+      &:last-child {
+        margin-right: 25%;
+      }
+    }
+  }
+  .inactive {
+    opacity: 0.3;
+    scale: 90%;
+  }
+}
+@media screen and (max-width: 960px) and (min-width: 600px) {
+  .carousel {
+    &__item {
+      aspect-ratio: 2;
+      min-height: 320px;
+
+      & .survey,
+      & .np,
+      & .mega {
+        &__overlay {
+          width: clamp(220px, 35vw, 320px);
+          margin: auto 40px;
+        }
+      }
+      & .vid {
+        &__overlay {
+          width: clamp(220px, 45vw, 350px);
+          margin: 0;
+          padding: 0 1.25rem;
+        }
+      }
+    }
+  }
+  .platform {
+    gap: 0.5rem;
+    &__icon {
+      width: 20px;
+    }
+  }
+}
+@media screen and (max-width: 600px) {
+  .carousel {
+    gap: 16px;
+    margin: 16px 0;
+
+    &__item {
+      aspect-ratio: 0.75;
+      min-height: 560px;
+
+      & .survey,
+      & .np,
+      & .mega,
+      & .vid {
+        &__overlay {
+          @include flex(column, 1rem, center, flex-end);
+          margin: 0 0 2.5rem 0;
+          padding: 0 1rem;
+          width: 100%;
+        }
+      }
+
+      & .jbg,
+      & .survey,
+      & .np,
+      & .mega,
+      & .vid {
+        display: none;
+
+        &-mobile {
+          display: block;
+
+          background-position: top;
+          background-repeat: no-repeat;
+          background-size: cover;
+          justify-content: center;
+          padding-bottom: 16px;
+        }
+      }
+      & .vid__overlay {
+        max-width: 340px;
+      }
+    }
+  }
+  .platform {
+    &__icon {
+      width: 20px;
+    }
+  }
+  .overlay__button {
+    @include text(0.875rem, 800, $lh: 0.875rem);
+  }
+}
+@media screen and (min-width: 960px) and (max-width: 1265px) {
+  .carousel {
+    &__item {
+      & .survey,
+      & .np,
+      & .mega,
+      & .vid {
+        &__overlay {
+          max-width: 320px;
+        }
+      }
+    }
+  }
+}

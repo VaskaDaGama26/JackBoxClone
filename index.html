@@ -1,0 +1,1314 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/style.css" />
+    <title>JackBoxClone</title>
+  </head>
+  <body>
+    <!-- HEADER -->
+    <header class="header__wrapper">
+      <div class="header">
+        <div class="header__left">
+          <!-- LOGO -->
+          <a class="logo" href="/">
+            <img class="logo__img" src="/public//logo.svg" alt="Logo" />
+          </a>
+          <!-- BURGER ICON -->
+          <div class="menu">
+            <svg
+              data-v-dfb977e7=""
+              class="svg-inline--fa fa-bars icon"
+              aria-hidden="true"
+              focusable="false"
+              data-prefix="far"
+              data-icon="bars"
+              role="img"
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 448 512"
+              data-fa-i2svg=""
+            >
+              <path
+                fill="currentColor"
+                d="M0 88C0 74.7 10.7 64 24 64l400 0c13.3 0 24 10.7 24 24s-10.7 24-24 24L24 112C10.7 112 0 101.3 0 88zM0 248c0-13.3 10.7-24 24-24l400 0c13.3 0 24 10.7 24 24s-10.7 24-24 24L24 272c-13.3 0-24-10.7-24-24zM448 408c0 13.3-10.7 24-24 24L24 432c-13.3 0-24-10.7-24-24s10.7-24 24-24l400 0c13.3 0 24 10.7 24 24z"
+              ></path>
+            </svg>
+          </div>
+          <!-- NAVIGATION (DESKTOP) -->
+          <nav class="nav">
+            <ul class="nav__list">
+              <a href="#games">
+                <li class="nav__item">
+                  Games
+                  <div class="arrow">
+                    <svg
+                      class="svg-inline--fa fa-caret-right"
+                      data-v-dc1f8e69=""
+                      aria-hidden="true"
+                      focusable="false"
+                      data-prefix="fas"
+                      data-icon="caret-right"
+                      role="img"
+                      xmlns="http://www.w3.org/2000/svg"
+                      viewBox="0 0 256 512"
+                      data-fa-i2svg=""
+                    >
+                      <path
+                        fill="currentColor"
+                        d="M246.6 278.6c12.5-12.5 12.5-32.8 0-45.3l-128-128c-9.2-9.2-22.9-11.9-34.9-6.9s-19.8 16.6-19.8 29.6l0 256c0 12.9 7.8 24.6 19.8 29.6s25.7 2.2 34.9-6.9l128-128z"
+                      ></path>
+                    </svg>
+                  </div>
+                </li>
+              </a>
+              <a href="#howtoplay">
+                <li class="nav__item">How To Play</li>
+              </a>
+              <a href="#company">
+                <li class="nav__item">
+                  Company
+                  <div class="arrow">
+                    <svg
+                      class="svg-inline--fa fa-caret-right"
+                      data-v-dc1f8e69=""
+                      aria-hidden="true"
+                      focusable="false"
+                      data-prefix="fas"
+                      data-icon="caret-right"
+                      role="img"
+                      xmlns="http://www.w3.org/2000/svg"
+                      viewBox="0 0 256 512"
+                      data-fa-i2svg=""
+                    >
+                      <path
+                        fill="currentColor"
+                        d="M246.6 278.6c12.5-12.5 12.5-32.8 0-45.3l-128-128c-9.2-9.2-22.9-11.9-34.9-6.9s-19.8 16.6-19.8 29.6l0 256c0 12.9 7.8 24.6 19.8 29.6s25.7 2.2 34.9-6.9l128-128z"
+                      ></path>
+                    </svg>
+                  </div>
+                </li>
+              </a>
+              <a href="" class="signup">
+                <li class="nav__item">Sign Up</li>
+              </a>
+            </ul>
+          </nav>
+          <!-- BG WHEN MENU OPEN -->
+          <div class="bg__mobile"></div>
+          <!-- NAVIGATION (MOBILE) -->
+          <nav class="nav__mobile">
+            <div class="close">
+              <svg
+                data-v-dfb977e7=""
+                class="svg-inline--fa fa-xmark"
+                aria-hidden="true"
+                focusable="false"
+                data-prefix="far"
+                data-icon="xmark"
+                role="img"
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 384 512"
+                data-fa-i2svg=""
+              >
+                <path
+                  fill="currentColor"
+                  d="M345 137c9.4-9.4 9.4-24.6 0-33.9s-24.6-9.4-33.9 0l-119 119L73 103c-9.4-9.4-24.6-9.4-33.9 0s-9.4 24.6 0 33.9l119 119L39 375c-9.4 9.4-9.4 24.6 0 33.9s24.6 9.4 33.9 0l119-119L311 409c9.4 9.4 24.6 9.4 33.9 0s9.4-24.6 0-33.9l-119-119L345 137z"
+                ></path>
+              </svg>
+            </div>
+            <ul class="nav__mobile__list">
+              <a href="#games">
+                <li class="nav__mobile__list__item">
+                  Games
+                  <div class="arrow">
+                    <svg
+                      class="svg-inline--fa fa-caret-right"
+                      data-v-dc1f8e69=""
+                      aria-hidden="true"
+                      focusable="false"
+                      data-prefix="fas"
+                      data-icon="caret-right"
+                      role="img"
+                      xmlns="http://www.w3.org/2000/svg"
+                      viewBox="0 0 256 512"
+                      data-fa-i2svg=""
+                    >
+                      <path
+                        fill="currentColor"
+                        d="M246.6 278.6c12.5-12.5 12.5-32.8 0-45.3l-128-128c-9.2-9.2-22.9-11.9-34.9-6.9s-19.8 16.6-19.8 29.6l0 256c0 12.9 7.8 24.6 19.8 29.6s25.7 2.2 34.9-6.9l128-128z"
+                      ></path>
+                    </svg>
+                  </div>
+                </li>
+              </a>
+              <a href="#howtoplay">
+                <li class="nav__mobile__list__item">How To Play</li>
+              </a>
+              <a href="#company">
+                <li class="nav__mobile__list__item">
+                  Company
+                  <div class="arrow">
+                    <svg
+                      class="svg-inline--fa fa-caret-right"
+                      data-v-dc1f8e69=""
+                      aria-hidden="true"
+                      focusable="false"
+                      data-prefix="fas"
+                      data-icon="caret-right"
+                      role="img"
+                      xmlns="http://www.w3.org/2000/svg"
+                      viewBox="0 0 256 512"
+                      data-fa-i2svg=""
+                    >
+                      <path
+                        fill="currentColor"
+                        d="M246.6 278.6c12.5-12.5 12.5-32.8 0-45.3l-128-128c-9.2-9.2-22.9-11.9-34.9-6.9s-19.8 16.6-19.8 29.6l0 256c0 12.9 7.8 24.6 19.8 29.6s25.7 2.2 34.9-6.9l128-128z"
+                      ></path>
+                    </svg>
+                  </div>
+                </li>
+              </a>
+              <a href="" class="signup">
+                <li class="nav__mobile__list__item">Sign Up</li>
+              </a>
+            </ul>
+          </nav>
+        </div>
+        <div class="header__right">
+          <!-- GLOBE ICON -->
+          <a href="/">
+            <div class="globe">
+              <svg
+                data-v-dc1f8e69=""
+                class="svg-inline--fa fa-globe icon"
+                aria-hidden="true"
+                focusable="false"
+                data-prefix="fad"
+                data-icon="globe"
+                role="img"
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 512 512"
+                data-fa-i2svg=""
+              >
+                <g class="fa-duotone-group">
+                  <path
+                    class="secondary"
+                    fill="currentColor"
+                    d="M0 256c0-22.1 2.8-43.5 8.1-64c41 0 82.1 0 123.1 0c-1 10.3-1.8 20.8-2.4 31.6c-.1 2.6-.2 5.3-.4 8.1c-.1 2.5-.2 5-.2 7.5l0 .6c-.1 2.6-.1 5.1-.1 7.5l0 .4c0 2.6 0 5.2-.1 7.7l0 .4c0 8.2 .2 16.4 .5 24.5c.1 2.6 .2 5.3 .3 7.9c.5 10.7 1.3 21.3 2.4 31.6L8.1 320C2.8 299.5 0 278.1 0 256zm18.6-96C48.5 86.3 111.6 29.6 189.5 8.7c-25 34.6-44.3 88-54.2 151.3c-38.9 0-77.8 0-116.6 0zm0 192l116.6 0c9.9 63.3 29.2 116.7 54.2 151.3C111.6 482.4 48.5 425.7 18.6 352zM160.5 231.4c.1-2.7 .2-5.4 .4-8.1c.6-10.7 1.4-21.1 2.5-31.4c61.8 0 123.6 0 185.3 0c2.2 20.4 3.3 41.9 3.3 64c0 22.1-1.2 43.5-3.3 64c-61.8 0-123.6 0-185.3 0c-1.1-10.2-1.9-20.7-2.5-31.4c-.3-5.4-.5-10.9-.6-16.4c-.1-2.7-.1-5.3-.2-8c0-2.6-.1-5.2-.1-7.8l0-.4c0-.1 0-.3 0-.4c0-2.8 0-5.5 .1-8.2c0-2.5 .1-5.1 .2-7.6l0-.6c.1-2.5 .2-5.1 .3-7.7zm7.2-71.4c6.1-36.7 15.5-69.2 27.1-95.5c10.5-23.8 22.2-41.2 33.6-52.1c6.8-6.5 12.8-10.2 18.1-12.2c3.2-.1 6.3-.2 9.5-.2s6.3 .1 9.5 .2c5.3 1.9 11.4 5.7 18.1 12.2c11.4 10.9 23.1 28.3 33.6 52.1c11.6 26.3 21 58.8 27.1 95.5c-58.9 0-117.8 0-176.7 0zm0 192l176.7 0c-6.1 36.7-15.5 69.2-27.1 95.5c-10.5 23.8-22.2 41.2-33.6 52.1c-6.8 6.5-12.8 10.2-18.1 12.2c-3.2 .1-6.3 .2-9.5 .2s-6.3-.1-9.5-.2c-5.3-1.9-11.4-5.7-18.1-12.2c-11.4-10.9-23.1-28.3-33.6-52.1c-11.6-26.3-21-58.8-27.1-95.5zM322.5 8.7c77.8 20.9 141 77.5 170.9 151.3c-38.9 0-77.8 0-116.6 0C366.9 96.7 347.5 43.3 322.5 8.7zm0 494.6c25-34.6 44.3-88 54.2-151.3l116.6 0c-29.8 73.7-93 130.4-170.9 151.3zM380.8 192c41 0 82.1 0 123.1 0c5.3 20.5 8.1 41.9 8.1 64s-2.8 43.5-8.1 64l-123.1 0c2.1-20.6 3.2-42 3.2-64c0-22-1.1-43.4-3.2-64z"
+                  ></path>
+                  <path
+                    class="primary"
+                    fill="currentColor"
+                    d="M344.3 352c-6.1 36.7-15.5 69.2-27.1 95.5c-10.5 23.8-22.2 41.2-33.6 52.1c-6.8 6.5-12.8 10.2-18.1 12.2c19.7-.7 38.7-3.6 57-8.6c25-34.6 44.3-88 54.2-151.3l116.6 0c4.2-10.3 7.7-21 10.5-32l-123.1 0c2.1-20.6 3.2-42 3.2-64s-1.1-43.4-3.2-64l123.1 0c-2.8-11-6.4-21.7-10.5-32l-116.6 0C366.9 96.7 347.5 43.3 322.5 8.7c-18.3-4.9-37.4-7.8-57-8.6c5.3 1.9 11.4 5.7 18.1 12.2c11.4 10.9 23.1 28.3 33.6 52.1c11.6 26.3 21 58.8 27.1 95.5l-176.7 0c6.1-36.7 15.5-69.2 27.1-95.5c10.5-23.8 22.2-41.2 33.6-52.1c6.8-6.5 12.8-10.2 18.1-12.2c-19.7 .7-38.7 3.6-57 8.6c-25 34.6-44.4 88-54.2 151.3L18.6 160c-4.2 10.3-7.7 21-10.5 32l123.1 0c-2.1 20.6-3.2 42-3.2 64s1.1 43.4 3.2 64L8.1 320c2.8 11 6.4 21.7 10.5 32l116.6 0c9.9 63.3 29.2 116.7 54.2 151.3c18.3 4.9 37.4 7.8 57 8.6c-5.3-1.9-11.4-5.7-18.1-12.2c-11.4-10.9-23.1-28.3-33.6-52.1c-11.6-26.3-21-58.8-27.1-95.5l176.7 0zm7.7-96c0 22.1-1.2 43.6-3.3 64l-185.3 0c-2.2-20.4-3.3-41.9-3.3-64s1.2-43.6 3.3-64l185.3 0c2.2 20.4 3.3 41.9 3.3 64z"
+                  ></path>
+                </g>
+              </svg>
+            </div>
+          </a>
+          <!-- CART ICON -->
+          <a href="/">
+            <div class="cart">
+              <svg
+                data-v-85a15825=""
+                class="svg-inline--fa fa-shopping-cart icon"
+                aria-hidden="true"
+                focusable="false"
+                data-prefix="fad"
+                data-icon="shopping-cart"
+                role="img"
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 576 512"
+                data-fa-i2svg=""
+              >
+                <g class="fa-duotone-group">
+                  <path
+                    class="secondary"
+                    fill="currentColor"
+                    d="M120.1 32c2 4.2 3.5 8.8 4.4 13.5c15.4 80.8 30.8 161.7 46.2 242.5l288.5 0c32.6 0 61.1-21.8 69.5-53.3l41-152.3C576.6 57 557.4 32 531.1 32l-411 0z"
+                  ></path>
+                  <path
+                    class="primary"
+                    fill="currentColor"
+                    d="M0 24C0 10.7 10.7 0 24 0L69.5 0c26.9 0 50 19.1 55 45.5l51.6 271c2.2 11.3 12.1 19.5 23.6 19.5L488 336c13.3 0 24 10.7 24 24s-10.7 24-24 24l-288.3 0c-34.6 0-64.3-24.6-70.7-58.5L77.4 54.5c-.7-3.8-4-6.5-7.9-6.5L24 48C10.7 48 0 37.3 0 24zM128 464a48 48 0 1 1 96 0 48 48 0 1 1 -96 0zm336-48a48 48 0 1 1 0 96 48 48 0 1 1 0-96z"
+                  ></path>
+                </g>
+              </svg>
+            </div>
+          </a>
+        </div>
+      </div>
+    </header>
+
+    <!-- SIGNUP MODAL -->
+    <div class="modal" id="signupModal">
+      <div class="modal__content">
+        <span class="modal__close">&times;</span>
+        <h2>Registration</h2>
+        <form id="signupForm">
+          <label for="username">Username</label>
+          <input type="text" id="username" name="username" required />
+
+          <label for="email">Email</label>
+          <input type="email" id="email" name="email" required />
+
+          <label for="password">Password</label>
+          <input type="password" id="password" name="password" required />
+
+          <button type="submit">Sign up</button>
+        </form>
+      </div>
+    </div>
+
+    <!-- MAINPAGE -->
+    <section class="main__page">
+      <!-- CAROUSEL BLOCK -->
+      <div class="carousel__wrapper">
+        <div class="carousel">
+          <!-- JBG -->
+          <div class="carousel__item">
+            <div class="jbg"></div>
+            <div class="jbg-mobile"></div>
+            <!-- CARDS (UNDONE) -->
+            <!-- <div class="cards">
+              <div class="card">
+                <img
+                  src="/public/carousel/overlay/jbg-overlay-1.webp"
+                  alt="TMP3"
+                />
+                <button class="card__button">Learn More</button>
+              </div>
+              <div class="card">
+                <img
+                  src="/public/carousel/overlay/jbg-overlay-2.webp"
+                  alt="JBPP11"
+                />
+                <button class="card__button">Learn More</button>
+              </div>
+            </div> -->
+          </div>
+          <!-- SURVEY -->
+          <div class="carousel__item">
+            <div class="survey"></div>
+            <div class="survey-mobile"></div>
+            <div class="survey__overlay">
+              <img
+                src="/public/carousel/overlay/survey-overlay-1.webp"
+                alt="Survey"
+                class="overlay__img"
+              />
+              <button class="overlay__button">Sign Up</button>
+              <div class="platform">
+                <!-- SWITCH -->
+                <img
+                  class="platform__icon"
+                  src="/public/carousel/overlay/icons/switch.svg"
+                  alt="Switch"
+                />
+                <!-- XBOX -->
+                <img
+                  class="platform__icon"
+                  src="/public/carousel/overlay/icons/xbox.svg"
+                  alt="Xbox"
+                />
+                <!-- PS -->
+                <img
+                  class="platform__icon"
+                  src="/public/carousel/overlay/icons/ps.svg"
+                  alt="PlayStation"
+                />
+                <!-- STEAM -->
+                <img
+                  class="platform__icon"
+                  src="/public/carousel/overlay/icons/steam.svg"
+                  alt="Steam"
+                />
+                <!-- MAC -->
+                <img
+                  class="platform__icon"
+                  src="/public/carousel/overlay/icons/mac.svg"
+                  alt="Apple"
+                />
+                <!-- AMAZON -->
+                <img
+                  class="platform__icon"
+                  src="/public/carousel/overlay/icons/amazon.svg"
+                  alt="Amazon"
+                />
+                <!-- EPIC -->
+                <img
+                  class="platform__icon"
+                  src="/public/carousel/overlay/icons/epicgames.svg"
+                  alt="Epic"
+                />
+                <!-- HUMBLE -->
+                <img
+                  class="platform__icon"
+                  src="/public/carousel/overlay/icons/humble.svg"
+                  alt="Humble"
+                />
+              </div>
+            </div>
+          </div>
+          <!-- NP -->
+          <div class="carousel__item">
+            <div class="np"></div>
+            <div class="np-mobile"></div>
+            <div class="np__overlay">
+              <img
+                src="/public/carousel/overlay/np-overlay-1.webp"
+                alt="Naughty Pack"
+                class="overlay__img"
+              />
+              <button class="overlay__button">Sign Up</button>
+              <div class="platform">
+                <!-- SWITCH -->
+                <img
+                  class="platform__icon"
+                  src="/public/carousel/overlay/icons/switch.svg"
+                  alt="Switch"
+                />
+                <!-- XBOX -->
+                <img
+                  class="platform__icon"
+                  src="/public/carousel/overlay/icons/xbox.svg"
+                  alt="Xbox"
+                />
+                <!-- PS -->
+                <img
+                  class="platform__icon"
+                  src="/public/carousel/overlay/icons/ps.svg"
+                  alt="PlayStation"
+                />
+                <!-- STEAM -->
+                <img
+                  class="platform__icon"
+                  src="/public/carousel/overlay/icons/steam.svg"
+                  alt="Steam"
+                />
+                <!-- MAC -->
+                <img
+                  class="platform__icon"
+                  src="/public/carousel/overlay/icons/mac.svg"
+                  alt="Apple"
+                />
+                <!-- AMAZON -->
+                <img
+                  class="platform__icon"
+                  src="/public/carousel/overlay/icons/amazon.svg"
+                  alt="Amazon"
+                />
+                <!-- EPIC -->
+                <img
+                  class="platform__icon"
+                  src="/public/carousel/overlay/icons/epicgames.svg"
+                  alt="Epic"
+                />
+                <!-- HUMBLE -->
+                <img
+                  class="platform__icon"
+                  src="/public/carousel/overlay/icons/humble.svg"
+                  alt="Humble"
+                />
+              </div>
+            </div>
+          </div>
+          <!-- MEGA -->
+          <div class="carousel__item">
+            <div class="mega"></div>
+            <div class="mega-mobile"></div>
+            <div class="mega__overlay">
+              <img
+                src="/public/carousel/overlay/mega-overlay-1.webp"
+                alt="Mega"
+                class="overlay__img"
+              />
+              <button class="overlay__button">Sign Up</button>
+              <div class="platform">
+                <!-- SWITCH -->
+                <img
+                  class="platform__icon"
+                  src="/public/carousel/overlay/icons/switch.svg"
+                  alt="Switch"
+                />
+                <!-- XBOX -->
+                <img
+                  class="platform__icon"
+                  src="/public/carousel/overlay/icons/xbox.svg"
+                  alt="Xbox"
+                />
+                <!-- PS -->
+                <img
+                  class="platform__icon"
+                  src="/public/carousel/overlay/icons/ps.svg"
+                  alt="PlayStation"
+                />
+                <!-- STEAM -->
+                <img
+                  class="platform__icon"
+                  src="/public/carousel/overlay/icons/steam.svg"
+                  alt="Steam"
+                />
+                <!-- MAC -->
+                <img
+                  class="platform__icon"
+                  src="/public/carousel/overlay/icons/mac.svg"
+                  alt="Apple"
+                />
+                <!-- AMAZON -->
+                <img
+                  class="platform__icon"
+                  src="/public/carousel/overlay/icons/amazon.svg"
+                  alt="Amazon"
+                />
+                <!-- EPIC -->
+                <img
+                  class="platform__icon"
+                  src="/public/carousel/overlay/icons/epicgames.svg"
+                  alt="Epic"
+                />
+                <!-- HUMBLE -->
+                <img
+                  class="platform__icon"
+                  src="/public/carousel/overlay/icons/humble.svg"
+                  alt="Humble"
+                />
+              </div>
+            </div>
+          </div>
+          <!-- VID -->
+          <div class="carousel__item">
+            <div class="vid">
+              <video autoplay muted loop playsinline>
+                <source src="/public/carousel/vid.webm" type="video/mp4" />
+              </video>
+            </div>
+            <div class="vid-mobile"></div>
+            <div class="vid__overlay">
+              <img
+                src="/public/carousel/overlay/vid-overlay-1.webp"
+                alt="Vid"
+                class="overlay__img"
+              />
+              <button class="overlay__button">Sign Up</button>
+              <div class="platform">
+                <!-- SWITCH -->
+                <img
+                  class="platform__icon"
+                  src="/public/carousel/overlay/icons/switch.svg"
+                  alt="Switch"
+                />
+                <!-- XBOX -->
+                <img
+                  class="platform__icon"
+                  src="/public/carousel/overlay/icons/xbox.svg"
+                  alt="Xbox"
+                />
+                <!-- PS -->
+                <img
+                  class="platform__icon"
+                  src="/public/carousel/overlay/icons/ps.svg"
+                  alt="PlayStation"
+                />
+                <!-- STEAM -->
+                <img
+                  class="platform__icon"
+                  src="/public/carousel/overlay/icons/steam.svg"
+                  alt="Steam"
+                />
+                <!-- MAC -->
+                <img
+                  class="platform__icon"
+                  src="/public/carousel/overlay/icons/mac.svg"
+                  alt="Apple"
+                />
+                <!-- AMAZON -->
+                <img
+                  class="platform__icon"
+                  src="/public/carousel/overlay/icons/amazon.svg"
+                  alt="Amazon"
+                />
+                <!-- EPIC -->
+                <img
+                  class="platform__icon"
+                  src="/public/carousel/overlay/icons/epicgames.svg"
+                  alt="Epic"
+                />
+                <!-- HUMBLE -->
+                <img
+                  class="platform__icon"
+                  src="/public/carousel/overlay/icons/humble.svg"
+                  alt="Humble"
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- CONTROLS -->
+        <div class="controls">
+          <div class="controls__button left" role="button">
+            <img src="/public/arrow.svg" alt="" class="controls__button__img" />
+          </div>
+          <div class="controls__dot" role="button"></div>
+          <div class="controls__dot" role="button"></div>
+          <div class="controls__dot" role="button"></div>
+          <div class="controls__dot" role="button"></div>
+          <div class="controls__dot" role="button"></div>
+          <div class="controls__button right" role="button">
+            <img src="/public/arrow.svg" alt="" class="controls__button__img" />
+          </div>
+        </div>
+      </div>
+      <!-- ABOUT BLOCK -->
+      <div class="about">
+        <div class="about__img"></div>
+        <div class="about__right">
+          <h4 class="about__right__upperheading">
+            The Official Home of Jackbox Games Online
+          </h4>
+          <h1 class="about__right__heading">Who are Jackbox Games?</h1>
+          <p class="about__right__label">
+            Jackbox Games is a game development studio from Chicago, widely
+            recognized for its popular party titles like Quiplash, Fibbage,
+            Drawful, Trivia Murder Party, and several others!
+          </p>
+          <p class="about__right__label">
+            Imagine us as the quirky offspring of traditional party games like
+            charades — the kind of kid who left college early, only to win
+            everyone over by turning into a world-renowned clown.
+          </p>
+          <!-- GAMES GRID -->
+          <div class="about__right__games">
+            <a href="#game1">
+              <img
+                src="/public/about-games/game1.png"
+                alt="game1"
+                class="about__right__games__img"
+              />
+            </a>
+            <a href="#game2">
+              <img
+                src="/public/about-games/game2.png"
+                alt="game2"
+                class="about__right__games__img"
+              />
+            </a>
+            <a href="#game3">
+              <img
+                src="/public/about-games/game3.png"
+                alt="game3"
+                class="about__right__games__img"
+              />
+            </a>
+            <a href="#game4">
+              <img
+                src="/public/about-games/game4.png"
+                alt="game4"
+                class="about__right__games__img"
+              />
+            </a>
+          </div>
+        </div>
+      </div>
+      <!-- ABOUT BLOCK (MOBILE) -->
+      <div class="about__mobile">
+        <div class="about__mobile__title">
+          <h4 class="about__mobile__title__upperheading">
+            The Official Home of Jackbox Games Online
+          </h4>
+          <h1 class="about__mobile__title__heading">Who are Jackbox Games?</h1>
+        </div>
+        <div class="about__mobile__img"></div>
+        <div class="about__mobile__content">
+          <div class="about__mobile__content__text">
+            <p>
+              Jackbox Games is a game development studio from Chicago, widely
+              recognized for its popular party titles like Quiplash, Fibbage,
+              Drawful, Trivia Murder Party, and several others!
+            </p>
+            <p>
+              Imagine us as the quirky offspring of traditional party games like
+              charades — the kind of kid who left college early, only to win
+              everyone over by turning into a world-renowned clown.
+            </p>
+          </div>
+          <!-- GAMES GRID (MOBILE) -->
+          <div class="about__mobile__content__grid">
+            <a href="#game1">
+              <img
+                src="/public/about-games/game1.png"
+                alt="game1"
+                class="about__mobile__content__grid__img"
+              />
+            </a>
+            <a href="#game2">
+              <img
+                src="/public/about-games/game2.png"
+                alt="game2"
+                class="about__mobile__content__grid__img"
+              />
+            </a>
+            <a href="#game3">
+              <img
+                src="/public/about-games/game3.png"
+                alt="game3"
+                class="about__mobile__content__grid__img"
+              />
+            </a>
+            <a href="#game4">
+              <img
+                src="/public/about-games/game4.png"
+                alt="game4"
+                class="about__mobile__content__grid__img"
+              />
+            </a>
+          </div>
+        </div>
+      </div>
+      <!-- BLOG BLOCK -->
+      <div class="blog__wrapper">
+        <div class="blog">
+          <div class="blog__info">
+            <h4 class="pack__info__upperheading">Jackbox Games Blog</h4>
+            <h1 class="pack__info__heading">
+              We’re always cooking up something new
+            </h1>
+          </div>
+          <!-- BLOG NEWS -->
+          <div class="blog__news">
+            <a href="#1">
+              <img
+                src="/public/blog/1.webp"
+                alt="Blog 1"
+                class="blog__news__img"
+              />
+              <h4 class="blog__news__heading">
+                We’ve just unveiled the first game in Party Pack 11:
+                Suspectives!
+              </h4>
+              <p class="blog__news__date">5th May 2025</p>
+            </a>
+            <a href="#2">
+              <img
+                src="/public/blog/2.webp"
+                alt="Blog 2"
+                class="blog__news__img"
+              />
+              <h4 class="blog__news__heading">
+                Were you trying to find Trivia Murder Party?
+              </h4>
+              <p class="blog__news__date">30th April 2025</p>
+            </a>
+            <a href="#3">
+              <img
+                src="/public/blog/3.webp"
+                alt="Blog 3"
+                class="blog__news__img"
+              />
+              <h4 class="blog__news__heading">
+                Hey, Chicago! Catch us at C2E2 this weekend!
+              </h4>
+              <p class="blog__news__date">11th April 2025</p>
+            </a>
+            <a href="#4">
+              <img
+                src="/public/blog/4.webp"
+                alt="Blog 4"
+                class="blog__news__img"
+              />
+              <h4 class="blog__news__heading">
+                Jackbox Party Pack 11 and a Trivia Murder Party — both arriving
+                Fall 2025!
+              </h4>
+              <p class="blog__news__date">7th April 2025</p>
+            </a>
+          </div>
+          <button class="blog__button">
+            Explore the Official Jackbox Blog
+          </button>
+        </div>
+      </div>
+      <!-- PACKS BLOCK -->
+      <div class="pack__wrapper">
+        <div class="pack">
+          <div class="pack__info">
+            <h4 class="pack__info__upperheading">Jackbox Party Packs</h4>
+            <h1 class="pack__info__heading">
+              Go ahead and choose a Party Pack
+            </h1>
+            <p class="pack__info__label">
+              Every Party Pack includes five unique games, and to date, we’ve
+              released ten different packs. Our lineup blends a variety of game
+              types — drawing, writing, trivia, and hidden role games.
+            </p>
+          </div>
+          <div class="pack__list">
+            <a href="#naughty">
+              <div class="pack__list__img__wrapper">
+                <img
+                  src="/public/packs/naughty.webp"
+                  alt=""
+                  class="pack__list__img"
+                />
+              </div>
+            </a>
+            <a href="#10">
+              <div class="pack__list__img__wrapper">
+                <img
+                  src="/public/packs/10.webp"
+                  alt=""
+                  class="pack__list__img"
+                />
+              </div>
+            </a>
+            <a href="#9">
+              <div class="pack__list__img__wrapper">
+                <img
+                  src="/public/packs/9.webp"
+                  alt=""
+                  class="pack__list__img"
+                />
+              </div>
+            </a>
+            <a href="#starter">
+              <div class="pack__list__img__wrapper">
+                <img
+                  src="/public/packs/starter.webp"
+                  alt=""
+                  class="pack__list__img"
+                />
+              </div>
+            </a>
+            <a href="#8">
+              <div class="pack__list__img__wrapper">
+                <img
+                  src="/public/packs/8.webp"
+                  alt=""
+                  class="pack__list__img"
+                />
+              </div>
+            </a>
+            <a href="#7">
+              <div class="pack__list__img__wrapper">
+                <img
+                  src="/public/packs/7.webp"
+                  alt=""
+                  class="pack__list__img"
+                />
+              </div>
+            </a>
+            <a href="#6">
+              <div class="pack__list__img__wrapper">
+                <img
+                  src="/public/packs/6.webp"
+                  alt=""
+                  class="pack__list__img"
+                />
+              </div>
+            </a>
+            <a href="#5">
+              <div class="pack__list__img__wrapper">
+                <img
+                  src="/public/packs/5.webp"
+                  alt=""
+                  class="pack__list__img"
+                />
+              </div>
+            </a>
+            <a href="#4">
+              <div class="pack__list__img__wrapper">
+                <img
+                  src="/public/packs/4.webp"
+                  alt=""
+                  class="pack__list__img"
+                />
+              </div>
+            </a>
+            <a href="#3">
+              <div class="pack__list__img__wrapper">
+                <img
+                  src="/public/packs/3.webp"
+                  alt=""
+                  class="pack__list__img"
+                />
+              </div>
+            </a>
+            <a href="#2">
+              <div class="pack__list__img__wrapper">
+                <img
+                  src="/public/packs/2.webp"
+                  alt=""
+                  class="pack__list__img"
+                />
+              </div>
+            </a>
+            <a href="#1">
+              <div class="pack__list__img__wrapper">
+                <img
+                  src="/public/packs/1.webp"
+                  alt=""
+                  class="pack__list__img"
+                />
+              </div>
+            </a>
+          </div>
+        </div>
+      </div>
+      <!-- CONTACT BLOCK -->
+      <div class="contact__wrapper">
+        <div class="contact">
+          <!-- CONTACT LEFT -->
+          <div class="contact__left">
+            <h1 class="contact__left__heading">
+              Unite with Friends, Wherever They Are
+            </h1>
+            <h3 class="contact__left__underheading">
+              Play Jackbox - Bond Harder
+            </h3>
+            <p class="contact__left__desc">
+              No extra purchases needed — as long as everyone can see the host’s
+              screen, the fun can begin
+            </p>
+            <!-- CONTACT SOCIALS ICONS -->
+            <div class="contact__left__socials">
+              <h3 class="contact__left__socials__heading">
+                Connect with us on social media
+              </h3>
+              <div class="contact__left__socials__icons">
+                <a href="#fb">
+                  <img
+                    src="/public/socials/facebook.svg"
+                    alt="Facebook"
+                    class="socials__right__icon"
+                  />
+                </a>
+                <a href="#inst">
+                  <img
+                    src="/public/socials/instagram.svg"
+                    alt="Instagram"
+                    class="socials__right__icon"
+                  />
+                </a>
+                <a href="#reddit"
+                  ><img
+                    src="/public/socials/reddit.svg"
+                    alt="Reddit"
+                    class="socials__right__icon"
+                  />
+                </a>
+                <a href="#tt">
+                  <img
+                    src="/public/socials/tiktok.svg"
+                    alt="TikTok"
+                    class="socials__right__icon"
+                  />
+                </a>
+                <a href="#x">
+                  <img
+                    src="/public/socials/twitter.svg"
+                    alt="Twitter"
+                    class="socials__right__icon"
+                  />
+                </a>
+                <a href="#yt">
+                  <img
+                    src="/public/socials/youtube.svg"
+                    alt="YouTube"
+                    class="socials__right__icon"
+                  />
+                </a>
+              </div>
+            </div>
+            <!-- CONTACT FORM -->
+            <form class="contact__left__form">
+              <h3 class="contact__left__form__heading">
+                Subscribe to our newsletter
+              </h3>
+              <p class="contact__left__form__desc">
+                Get the latest on Jackbox Games, from news and updates to
+                teasers and exclusive content
+              </p>
+              <div class="contact__left__form__email">
+                <svg
+                  class="svg-inline--fa fa-envelope email-icon"
+                  data-v-afdd19be=""
+                  aria-hidden="true"
+                  focusable="false"
+                  data-prefix="far"
+                  data-icon="envelope"
+                  role="img"
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 512 512"
+                  data-fa-i2svg=""
+                >
+                  <path
+                    fill="currentColor"
+                    d="M64 112c-8.8 0-16 7.2-16 16l0 22.1L220.5 291.7c20.7 17 50.4 17 71.1 0L464 150.1l0-22.1c0-8.8-7.2-16-16-16L64 112zM48 212.2L48 384c0 8.8 7.2 16 16 16l384 0c8.8 0 16-7.2 16-16l0-171.8L322 328.8c-38.4 31.5-93.7 31.5-132 0L48 212.2zM0 128C0 92.7 28.7 64 64 64l384 0c35.3 0 64 28.7 64 64l0 256c0 35.3-28.7 64-64 64L64 448c-35.3 0-64-28.7-64-64L0 128z"
+                  ></path>
+                </svg>
+                <input
+                  type="text"
+                  placeholder="Email address"
+                  class="contact__left__form__email__input"
+                />
+              </div>
+              <button class="contact__left__form__button">Subscribe</button>
+            </form>
+          </div>
+          <!-- CONTACT RIGHT -->
+          <div class="contact__right">
+            <img src="/public/contact/guy.webp" alt="Guy" />
+            <img
+              class="contact__right__img"
+              src="/public/contact/characters.webp"
+              alt="Characters"
+            />
+          </div>
+        </div>
+      </div>
+      <!-- FAQ BLOCK -->
+      <div class="faq">
+        <!-- CHIMP IMG -->
+        <div class="faq__img">
+          <img src="/public/imgs/monkey.webp" alt="Monkey" />
+        </div>
+        <!-- FAQ LIST -->
+        <div class="faq__right">
+          <h4 class="faq__right__upperheading">Frequently Asked Questions</h4>
+          <h1 class="faq__right__heading">Still Have Questions?</h1>
+          <p class="faq__right__label">
+            We've gathered the most helpful info below — but if you can’t find
+            what you need, be sure to visit the How to Play section.
+          </p>
+          <div class="faq__list">
+            <div class="question__wrapper">
+              <div tabindex="0" class="question">
+                <p class="question__label">
+                  What exactly are Jackbox Games all about?
+                </p>
+                <div class="question__icon">
+                  <svg
+                    data-v-634db640=""
+                    class="svg-inline--fa fa-plus"
+                    alt="toggle icon"
+                    aria-hidden="true"
+                    focusable="false"
+                    data-prefix="fas"
+                    data-icon="plus"
+                    role="img"
+                    xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 448 512"
+                    data-fa-i2svg=""
+                  >
+                    <path
+                      fill="currentColor"
+                      d="M256 80c0-17.7-14.3-32-32-32s-32 14.3-32 32l0 144L48 224c-17.7 0-32 14.3-32 32s14.3 32 32 32l144 0 0 144c0 17.7 14.3 32 32 32s32-14.3 32-32l0-144 144 0c17.7 0 32-14.3 32-32s-14.3-32-32-32l-144 0 0-144z"
+                    ></path>
+                  </svg>
+                </div>
+              </div>
+              <div class="answer">
+                <p>
+                  Jackbox Games is a game studio specializing in party games,
+                  famous for titles like YOU DON’T KNOW JACK, Quiplash, Fibbage,
+                  Drawful, Trivia Murder Party, and many others. Imagine a
+                  modern twist on traditional social games like charades — but
+                  with a rebellious streak. It’s like the quirky kid who skipped
+                  college only to surprise everyone by launching a successful
+                  jam business.
+                </p>
+                <p>
+                  You might’ve come across us through a blog post, livestream,
+                  ad, or maybe a friend mentioned us. However you found us,
+                  we’re happy you did! Our mission is to turn your parties and
+                  hangouts into something delightfully strange, entertaining,
+                  and unforgettable.
+                </p>
+              </div>
+            </div>
+            <div class="question__wrapper">
+              <div tabindex="0" class="question">
+                <p class="question__label">
+                  Can you explain what a Party Pack is?
+                </p>
+                <div class="question__icon">
+                  <svg
+                    data-v-634db640=""
+                    class="svg-inline--fa fa-plus"
+                    alt="toggle icon"
+                    aria-hidden="true"
+                    focusable="false"
+                    data-prefix="fas"
+                    data-icon="plus"
+                    role="img"
+                    xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 448 512"
+                    data-fa-i2svg=""
+                  >
+                    <path
+                      fill="currentColor"
+                      d="M256 80c0-17.7-14.3-32-32-32s-32 14.3-32 32l0 144L48 224c-17.7 0-32 14.3-32 32s14.3 32 32 32l144 0 0 144c0 17.7 14.3 32 32 32s32-14.3 32-32l0-144 144 0c17.7 0 32-14.3 32-32s-14.3-32-32-32l-144 0 0-144z"
+                    ></path>
+                  </svg>
+                </div>
+              </div>
+              <div class="answer">
+                <p>
+                  Our games are crafted to entertain everyone—whether you're
+                  together in a room, on a Zoom call, or streaming on Twitch.
+                  From drawing and writing challenges to trivia and
+                  deception-based games, there's something for every guest to
+                  enjoy.
+                </p>
+                <p>
+                  Starting in 2014, we’ve launched a fresh set of games each
+                  year, bundled into what we call a Jackbox Party Pack. Each
+                  pack includes five unique games designed for 1 to 8 players.
+                  Got a bigger group? (1) Lucky you — clearly you’re a social
+                  magnet, and (2) plenty of our games support audience
+                  participation, so even more people can join in on the fun!
+                </p>
+                <p>
+                  We also offer fantastic individual games that aren’t part of
+                  the Party Packs, such as Drawful 2.
+                </p>
+              </div>
+            </div>
+            <div class="question__wrapper">
+              <div tabindex="0" class="question">
+                <p class="question__label">
+                  I’ve bought a Party Pack! Do my friends or family need to do
+                  anything to join me in playing?
+                </p>
+                <div class="question__icon">
+                  <svg
+                    data-v-634db640=""
+                    class="svg-inline--fa fa-plus"
+                    alt="toggle icon"
+                    aria-hidden="true"
+                    focusable="false"
+                    data-prefix="fas"
+                    data-icon="plus"
+                    role="img"
+                    xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 448 512"
+                    data-fa-i2svg=""
+                  >
+                    <path
+                      fill="currentColor"
+                      d="M256 80c0-17.7-14.3-32-32-32s-32 14.3-32 32l0 144L48 224c-17.7 0-32 14.3-32 32s14.3 32 32 32l144 0 0 144c0 17.7 14.3 32 32 32s32-14.3 32-32l0-144 144 0c17.7 0 32-14.3 32-32s-14.3-32-32-32l-144 0 0-144z"
+                    ></path>
+                  </svg>
+                </div>
+              </div>
+              <div class="answer">
+                <p>
+                  All your players need is a mobile device or a web-enabled
+                  gadget! Let’s make this clear with some serious eye contact:
+                  no app or extra purchase required to play. They simply need a
+                  mobile device, an internet connection, and access to the
+                  screen where the game is running.
+                </p>
+              </div>
+            </div>
+            <div class="question__wrapper">
+              <div tabindex="0" class="question">
+                <p class="question__label">
+                  What’s the process to kick off a Jackbox game?
+                </p>
+                <div class="question__icon">
+                  <svg
+                    data-v-634db640=""
+                    class="svg-inline--fa fa-plus"
+                    alt="toggle icon"
+                    aria-hidden="true"
+                    focusable="false"
+                    data-prefix="fas"
+                    data-icon="plus"
+                    role="img"
+                    xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 448 512"
+                    data-fa-i2svg=""
+                  >
+                    <path
+                      fill="currentColor"
+                      d="M256 80c0-17.7-14.3-32-32-32s-32 14.3-32 32l0 144L48 224c-17.7 0-32 14.3-32 32s14.3 32 32 32l144 0 0 144c0 17.7 14.3 32 32 32s32-14.3 32-32l0-144 144 0c17.7 0 32-14.3 32-32s-14.3-32-32-32l-144 0 0-144z"
+                    ></path>
+                  </svg>
+                </div>
+              </div>
+              <div class="answer">
+                <p>
+                  You’ve got your Party Pack and your crew. Now it’s time to
+                  launch the game and dive in! We provide a handy video guide
+                  along with detailed instructions to help you connect all
+                  players to the game. This page also includes info on how to
+                  explore extra features and game customization options.
+                </p>
+                <p>
+                  The trick is to ensure that everyone in your group, whether
+                  they’re there in person or joining remotely, can see and hear
+                  the game screen. This way, they’ll be able to view the room
+                  code, join in, and follow along with the game’s action.
+                </p>
+              </div>
+            </div>
+            <div class="question__wrapper">
+              <div tabindex="0" class="question">
+                <p class="question__label">
+                  What steps should I take if I encounter problems while playing
+                  a Jackbox game?
+                </p>
+                <div class="question__icon">
+                  <svg
+                    data-v-634db640=""
+                    class="svg-inline--fa fa-plus"
+                    alt="toggle icon"
+                    aria-hidden="true"
+                    focusable="false"
+                    data-prefix="fas"
+                    data-icon="plus"
+                    role="img"
+                    xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 448 512"
+                    data-fa-i2svg=""
+                  >
+                    <path
+                      fill="currentColor"
+                      d="M256 80c0-17.7-14.3-32-32-32s-32 14.3-32 32l0 144L48 224c-17.7 0-32 14.3-32 32s14.3 32 32 32l144 0 0 144c0 17.7 14.3 32 32 32s32-14.3 32-32l0-144 144 0c17.7 0 32-14.3 32-32s-14.3-32-32-32l-144 0 0-144z"
+                    ></path>
+                  </svg>
+                </div>
+              </div>
+              <div class="answer">
+                <p>
+                  We offer a fantastic support website filled with helpful tips
+                  and solutions for common issues. If needed, you can also send
+                  a support ticket. Our team aims to respond within 1-3 business
+                  days, though holiday periods may cause slight delays.
+                </p>
+                <p>
+                  Here’s a crucial tip from us: If a player's mobile device
+                  disconnects during the game, they should try refreshing their
+                  browser. Most of the time, this will quickly get them back in.
+                  If that doesn't work, just reach out to us. Remember, we’re
+                  all about ensuring no one misses out on the fun!
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+      <div class="socials">
+        <!-- FORM -->
+        <div class="socials__left">
+          <!-- LOGO -->
+          <a class="logo socials__left__logo" href="/">
+            <img class="logo__img" src="/public//logo.svg" alt="Logo" />
+          </a>
+          <h4 class="newsletter__heading">Subscribe to our newsletter</h4>
+          <p class="newsletter__desc">
+            Get the freshest updates from Jackbox Games delivered right to your
+            email.
+          </p>
+          <!-- EMAIL INPUT FORM -->
+          <form action="" class="newsletter__form">
+            <div class="newsletter__form__email">
+              <svg
+                class="svg-inline--fa fa-envelope email-icon"
+                data-v-afdd19be=""
+                aria-hidden="true"
+                focusable="false"
+                data-prefix="far"
+                data-icon="envelope"
+                role="img"
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 512 512"
+                data-fa-i2svg=""
+              >
+                <path
+                  fill="currentColor"
+                  d="M64 112c-8.8 0-16 7.2-16 16l0 22.1L220.5 291.7c20.7 17 50.4 17 71.1 0L464 150.1l0-22.1c0-8.8-7.2-16-16-16L64 112zM48 212.2L48 384c0 8.8 7.2 16 16 16l384 0c8.8 0 16-7.2 16-16l0-171.8L322 328.8c-38.4 31.5-93.7 31.5-132 0L48 212.2zM0 128C0 92.7 28.7 64 64 64l384 0c35.3 0 64 28.7 64 64l0 256c0 35.3-28.7 64-64 64L64 448c-35.3 0-64-28.7-64-64L0 128z"
+                ></path>
+              </svg>
+              <input
+                type="text"
+                placeholder="Email address"
+                class="newsletter__form__email__input"
+              />
+            </div>
+            <button class="newsletter__form__button">Subscribe</button>
+          </form>
+        </div>
+        <!-- SOCIALS ICONS -->
+        <div class="socials__right">
+          <a href="#fb">
+            <img
+              src="/public/socials/facebook.svg"
+              alt="Facebook"
+              class="socials__right__icon"
+            />
+          </a>
+          <a href="#inst">
+            <img
+              src="/public/socials/instagram.svg"
+              alt="Instagram"
+              class="socials__right__icon"
+            />
+          </a>
+          <a href="#reddit"
+            ><img
+              src="/public/socials/reddit.svg"
+              alt="Reddit"
+              class="socials__right__icon"
+            />
+          </a>
+          <a href="#tt">
+            <img
+              src="/public/socials/tiktok.svg"
+              alt="TikTok"
+              class="socials__right__icon"
+            />
+          </a>
+          <a href="#x">
+            <img
+              src="/public/socials/twitter.svg"
+              alt="Twitter"
+              class="socials__right__icon"
+            />
+          </a>
+          <a href="#yt">
+            <img
+              src="/public/socials/youtube.svg"
+              alt="YouTube"
+              class="socials__right__icon"
+            />
+          </a>
+        </div>
+      </div>
+      <!-- COPYRIGHT -->
+      <div class="copyright">
+        <p class="copyright__label">
+          © Copyright 2025 Jackbox Games. All rights reserved.
+        </p>
+        <!-- DOCS LINKS -->
+        <div class="copyright__right">
+          <a class="copyright__right__link" href="/">Terms of Service</a>
+          <a class="copyright__right__link" href="/">Privacy Policy</a>
+        </div>
+      </div>
+    </footer>
+
+    <!-- SCRIPTS -->
+    <script src="/scripts/Accordion.js"></script>
+    <script src="/scripts/AboutAnimation.js"></script>
+    <script src="/scripts/ContactAnimation.js"></script>
+    <script src="/scripts/MobileMenu.js"></script>
+    <script src="/scripts/SignupForm.js"></script>
+    <script src="/scripts/Carousel.js"></script>
+  </body>
+</html>

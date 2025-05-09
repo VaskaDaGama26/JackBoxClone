@@ -1,0 +1,134 @@
+.footer {
+  padding: 5rem 2.5rem;
+}
+
+.socials {
+  @include flex(row, $justify: space-between);
+  padding-bottom: 1.25rem;
+  border-bottom: 1px solid $white;
+  &__left {
+    @include flex(column);
+  }
+  &__right {
+    @include flex(row, 1.5rem, end);
+
+    &__icon {
+      @include size($w: 24px, $h: 24px);
+    }
+  }
+}
+
+.copyright {
+  @include flex(row, $align: center, $justify: space-between);
+  color: $white;
+  text-align: center;
+  &__label {
+    font-size: 1rem;
+  }
+  &__right {
+    @include flex(row, 2rem, center);
+
+    &__link {
+      color: $white;
+      text-decoration: none;
+    }
+  }
+}
+
+.newsletter {
+  &__heading {
+    color: $white;
+    margin: 2.25rem 0 0 0;
+    text-transform: uppercase;
+  }
+  &__desc {
+    color: $white;
+    margin: 0.5rem 0 0 0;
+  }
+  &__form {
+    @include flex(row, 1rem, center, space-between);
+    margin-top: 1rem;
+    &__button {
+      color: $black;
+      background-color: $purple;
+      font-size: 1.125rem;
+      border-radius: 0.25rem;
+      padding: 0.875rem 1.25rem;
+      border: none;
+      cursor: pointer;
+
+      &:hover {
+        background-color: $white;
+      }
+    }
+    &__email {
+      color: $white;
+      width: 100%;
+      & svg {
+        @include size($w: 16px, $h: 16px);
+        position: absolute;
+        z-index: 998;
+        margin-top: 15px;
+        margin-left: 10px;
+      }
+      &__input {
+        @include size($w: 100%, $h: 48px);
+        position: relative;
+        background-color: $gray-bg;
+        padding: 0 0 0 2.25rem;
+        border-width: 0 0 2px 0;
+        border-color: $purple;
+        border-radius: 0.25rem 0.25rem 0 0;
+        caret-color: $white;
+        color: $white;
+
+        &::placeholder {
+          color: $white;
+          font-size: 0.875rem;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 960px) {
+  .socials {
+    @include flex(column, 1.5rem, center);
+    &__left__logo {
+      justify-content: center;
+      width: 100%;
+    }
+  }
+  .newsletter {
+    &__heading {
+      text-align: center;
+    }
+    &__desc {
+      text-align: center;
+    }
+    &__form {
+      flex-direction: column;
+      &__button {
+        width: 100%;
+      }
+    }
+  }
+  .copyright {
+    flex-direction: column;
+
+    &__label {
+      margin: 0 0 0.625rem 0;
+      font-size: 0.75rem;
+    }
+
+    &__right {
+      font-size: 0.825rem;
+      margin: 0 0 0.75rem 0;
+    }
+  }
+}
+@media screen and (min-width: 1280px) {
+  .footer {
+    padding: 5rem;
+  }
+}
