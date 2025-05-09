@@ -101,7 +101,7 @@
 
     // SLIDES PATHS
     & .jbg {
-      background-image: url("/public/carousel/1.webp");
+      background-image: url("./public/carousel/1.webp");
     }
     & .survey {
       background-image: linear-gradient(
@@ -109,7 +109,7 @@
           #00000000 48.54%,
           rgba(0, 0, 0, 0.6) 60.18%
         ),
-        url("/public/carousel/2.webp");
+        url("./public/carousel/2.webp");
     }
     & .np {
       background-image: linear-gradient(
@@ -117,7 +117,7 @@
           #00000000 48.54%,
           rgba(0, 0, 0, 0.6) 60.18%
         ),
-        url("/public/carousel/3.webp");
+        url("./public/carousel/3.webp");
     }
     & .mega {
       background-image: linear-gradient(
@@ -125,12 +125,12 @@
           #00000000 48.54%,
           rgba(0, 0, 0, 0.6) 60.18%
         ),
-        url("/public/carousel/4.webp");
+        url("./public/carousel/4.webp");
     }
     // MOBILE SLIDES PATHS
     & .jbg-mobile {
       display: none;
-      background-image: url("/public/carousel/1-mobile.webp");
+      background-image: url("./public/carousel/1-mobile.webp");
     }
     & .survey-mobile {
       display: none;
@@ -139,7 +139,7 @@
           #00000000 48.54%,
           rgba(0, 0, 0, 0.6) 60.18%
         ),
-        url("/public/carousel/2-mobile.webp");
+        url("./public/carousel/2-mobile.webp");
     }
     & .np-mobile {
       display: none;
@@ -148,7 +148,7 @@
           #00000000 48.54%,
           rgba(0, 0, 0, 0.6) 60.18%
         ),
-        url("/public/carousel/3-mobile.webp");
+        url("./public/carousel/3-mobile.webp");
     }
     & .mega-mobile {
       display: none;
@@ -157,7 +157,7 @@
           #00000000 48.54%,
           rgba(0, 0, 0, 0.6) 60.18%
         ),
-        url("/public/carousel/4-mobile.webp");
+        url("./public/carousel/4-mobile.webp");
     }
     & .vid-mobile {
       display: none;
@@ -166,7 +166,7 @@
           #00000000 48.54%,
           rgba(0, 0, 0, 0.6) 60.18%
         ),
-        url("/public/carousel/5-mobile.webp");
+        url("./public/carousel/5-mobile.webp");
     }
   }
 }
